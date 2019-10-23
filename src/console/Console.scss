@@ -1,0 +1,16 @@
+.console {
+    border: 1px solid #535253;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    align-items: flex-end;
+    background-color: #121212;
+    color: #C3C2C3;
+    display: flex;
+    height: 35vh;
+    padding: 10px;
+
+    p {
+        font-family: menlo, consolas, monospace;
+        margin: 0;
+    }
+}

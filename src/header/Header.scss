@@ -1,0 +1,17 @@
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .greeting {
+        text-align: center;
+
+        h1, h2 {
+            margin: 10px auto;
+        }
+    }
+
+    .avatar {
+        margin-top: -150px;
+    }
+}

@@ -1,0 +1,31 @@
+.post {
+    background-color: rgba(#ffffff, .7);
+    border-radius: 8px;
+    margin: 0 auto 30px;
+    max-width: 500px;
+    padding: 30px 30px 20px;
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+
+        .infos {
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+
+            p {
+                margin: 0;
+            }
+        }
+    }
+
+    .status {
+        font-size: 24px;
+    }
+
+    footer {
+        margin-top: 10px;
+    }
+}
