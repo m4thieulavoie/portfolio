@@ -1,7 +1,7 @@
 .window-container {
-  margin: 5px;
-  border-radius: 5px;
   background-color: rgba(#fff, 0.7);
+  border-radius: 5px;
+  margin: 5px;
   width: 50%;
 
   @media screen and (max-width: 950px) {
@@ -10,31 +10,31 @@
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 600px;
     margin: auto;
+    max-width: 600px;
   }
 
   header {
     background-color: rgba(#111, 0.7);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    padding: 0 5px;
     display: flex;
+    padding: 0 5px;
 
     .title {
-      user-select: none;
-      flex-grow: 1;
-      text-align: center;
       color: #ddd;
+      flex-grow: 1;
       font-family: menlo, consolas, monospace;
+      text-align: center;
+      user-select: none;
     }
 
     .button {
-      display: inline-flex;
-      width: 0.75rem;
-      height: 0.75rem;
       border-radius: 50%;
+      display: inline-flex;
+      height: 0.75rem;
       margin-right: 0.3rem;
+      width: 0.75rem;
 
       &.disabled {
         cursor: not-allowed;
@@ -57,22 +57,22 @@
 
   .content {
     max-height: 80vh;
-    overflow: auto;
     min-height: 50vh;
+    overflow: auto;
 
     @media screen and (max-width: 550px) {
-      word-break: break-word;
-      min-height: auto;
       max-height: none;
+      min-height: auto;
+      word-break: break-word;
     }
   }
 
   &.expanded {
     background-color: rgba(#fff, 0.85);
-    position: absolute;
     height: calc(100vh - 25px);
     left: 0;
     max-width: 100%;
+    position: absolute;
     top: 25px;
     width: 100%;
 

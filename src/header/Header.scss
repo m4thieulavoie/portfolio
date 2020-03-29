@@ -1,9 +1,9 @@
-header.app-header {
+.app-header {
   background-color: rgba(240, 240, 240, 0.8);
   height: 25px;
+  left: 0;
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
 
   @media screen and (max-width: 640px) {
@@ -11,18 +11,18 @@ header.app-header {
   }
 
   ul {
-    list-style: none;
-    height: 25px;
     display: flex;
+    height: 25px;
+    list-style: none;
     margin: 0;
     padding: 0;
 
     li {
       cursor: pointer;
-      padding: 0 10px;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
         Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
         "Segoe UI Symbol";
+      padding: 0 10px;
 
       @media screen and (max-width: 640px) {
         padding: 0 5px;
@@ -56,8 +56,8 @@ header.app-header {
     user-select: none;
 
     .avatar-container {
-      display: flex;
       align-items: center;
+      display: flex;
     }
 
     .image {

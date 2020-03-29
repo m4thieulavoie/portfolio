@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 
 body {
-  background-color: rgba(#cccccc, 0.45);
+  background-color: rgba(#ccc, 0.45);
   min-width: 400px;
 }
 
@@ -10,13 +10,13 @@ iframe {
   max-width: 100%;
 }
 
-.App {
-  background-image: url(https://i.redd.it/m8c20gchf7231.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  height: 100vh;
-  display: flex;
+.app {
   align-items: center;
+  background-attachment: fixed;
+  background-image: url("https://i.redd.it/m8c20gchf7231.jpg");
+  background-size: cover;
+  display: flex;
+  height: 100vh;
 
   @media screen and (max-width: 950px) {
     flex-direction: column;

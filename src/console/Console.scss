@@ -1,13 +1,13 @@
 .console {
   align-items: flex-start;
   background-color: rgba(#121212, 0.85);
-  color: #c3c2c3;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  flex-direction: column;
+  color: #c3c2c3;
   display: flex;
-  min-height: 50vh;
+  flex-direction: column;
   justify-content: flex-start;
+  min-height: 50vh;
   padding: 10px;
 
   p,
@@ -15,8 +15,8 @@
   li,
   div {
     font-family: menlo, consolas, monospace;
-    margin: 0;
     font-size: 16px;
+    margin: 0;
   }
 
   .text-container {
@@ -24,9 +24,9 @@
   }
 
   .cursor {
-    width: 2px;
     height: 20px;
     margin-left: 10px;
+    width: 2px;
 
     &.not-empty {
       display: none;
@@ -35,11 +35,11 @@
 
   .console-input {
     background-color: transparent;
-    border: none;
-    color: transparent;
+    border: 0;
     caret-color: #c3c2c3;
-    text-shadow: 0 0 0 #c3c2c3;
+    color: transparent;
     margin-left: 10px;
+    text-shadow: 0 0 0 #c3c2c3;
 
     &:focus {
       outline: none;
@@ -55,8 +55,8 @@
       margin: 0 5px;
 
       &:hover {
-        color: #121212;
         background-color: #fff;
+        color: #121212;
       }
     }
 
