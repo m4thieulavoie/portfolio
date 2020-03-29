@@ -48,13 +48,25 @@ header.app-header {
   .main-avatar {
     cursor: pointer;
     display: flex;
+    height: 100%;
+    padding: 0 5px;
     position: absolute;
-    right: 2px;
-    top: 2px;
+    right: 0;
+    top: 0;
     user-select: none;
+
+    .avatar-container {
+      display: flex;
+      align-items: center;
+    }
 
     .image {
       margin-right: 5px;
+    }
+
+    &:hover {
+      background-color: #158beb;
+      color: #fff;
     }
   }
 }
