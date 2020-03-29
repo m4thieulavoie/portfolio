@@ -1,6 +1,7 @@
-// #FCC212
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
 body {
-  background-color: rgba(#cccccc, .45);
+  background-color: rgba(#cccccc, 0.45);
 }
 
 img {
@@ -8,5 +9,19 @@ img {
 }
 
 a {
-  color: #1E3DA8;
+  color: #1e3da8;
+}
+
+.App {
+  background-image: url(https://i.redd.it/m8c20gchf7231.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 950px) {
+    flex-direction: column;
+    height: auto;
+  }
 }

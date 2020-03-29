@@ -1,26 +1,43 @@
-import React from 'react';
-import Avatar from '../avatar/Avatar';
-import Console from '../console/Console';
-import Menu from '../menu/Menu';
-import './Header.scss';
-import Emoji from '../emoji/Emoji';
+import React from "react";
+import Avatar from "../avatar/Avatar";
+import "./Header.scss";
+import Emoji from "../emoji/Emoji";
+import { navigateToPage } from "../utils";
+import { useHistory } from "react-router";
+import { menu } from "../_models/Menu";
 
 function Header() {
-  return <>
-    <header>
-        <Console></Console>
-        <Avatar size={300}></Avatar>
-        <div className="greeting">
-        <h1>
-                Hi, I'm Mathieu Lavoie <Emoji emoji="👋"></Emoji>
-            </h1>
-            <h2>
-                I'm a Web developer
-            </h2>
+  const history = useHistory();
+
+  const firstLetterUppercase = (word: string) =>
+    `${word.charAt(0).toUpperCase()}${word.slice(1)}`;
+
+  return (
+    <>
+      <header className="app-header">
+        <ul>
+          <li onClick={(e: any) => navigateToPage(e, "/", history)}>
+            Reset <Emoji emoji="🔄" />
+          </li>
+          {menu.map(item => (
+            <li
+              key={item}
+              onClick={(e: any) => navigateToPage(e, `/${item}`, history)}
+            >
+              {firstLetterUppercase(item)}
+            </li>
+          ))}
+        </ul>
+        <div
+          className="main-avatar"
+          onClick={(e: any) => navigateToPage(e, "/contact", history)}
+        >
+          <Avatar size={20} className="image"></Avatar>
+          Mathieu Lavoie - Senior Software Engineer
         </div>
-        <Menu></Menu>
-    </header>
-  </>;
+      </header>
+    </>
+  );
 }
 
 export default Header;

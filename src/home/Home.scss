@@ -1,0 +1,48 @@
+.home-avatar {
+  border: 5px solid #eee;
+  margin: 60px auto;
+}
+
+.home-content {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+
+  .button-container {
+    color: #555;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px auto;
+
+    button {
+      align-items: center;
+      border: 2px solid #888;
+      border-radius: 50%;
+      background-color: transparent;
+      cursor: pointer;
+      display: flex;
+      height: 50px;
+      justify-content: center;
+      margin: auto;
+      outline: none;
+      width: 50px;
+
+      img {
+        opacity: 0.5;
+      }
+    }
+
+    label {
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 600;
+      margin-top: 5px;
+    }
+  }
+
+  h1,
+  h4 {
+    color: #222;
+    margin: 5px auto 0 auto;
+  }
+}

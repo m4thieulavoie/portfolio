@@ -1,56 +1,48 @@
-import React from 'react';
-import './App.scss';
-import Header from './header/Header';
-import {
-  Switch,
-  Route,
-  BrowserRouter,
-} from "react-router-dom";
-import Home from './home/Home';
-import Posts from './posts/Posts';
-import { contactPosts } from './_models/ContactPosts';
-import { historyPosts } from './_models/HistoryPosts';
-import { aboutPosts } from './_models/AboutPosts';
-import Skillz from './skillz/Skillz';
-import { skillzPosts } from './_models/SkillzPosts';
+import React from "react";
+import "./App.scss";
+import { Switch, Route, BrowserRouter } from "react-router-dom";
+import Home from "./home/Home";
+import Posts from "./posts/Posts";
+import { contactPosts } from "./_models/ContactPosts";
+import { historyPosts } from "./_models/HistoryPosts";
+import { aboutPosts } from "./_models/AboutPosts";
+import { skillzPosts } from "./_models/SkillzPosts";
+import Console from "./console/Console";
+import Window from "./window/Window";
+import Header from "./header/Header";
+import { protfolioPosts } from "./_models/PortfolioPosts";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <Header></Header>
-      <Switch>
-      <Route path="/about">
-          <Posts posts={aboutPosts}></Posts>
-        </Route>
-        <Route path="/history">
-          <Posts posts={historyPosts}></Posts>
-        </Route>
-        <Route path="/skillz">
-          <Posts posts={skillzPosts}></Posts>
-        </Route>
-        <Route path="/contact">
-          <Posts posts={contactPosts}></Posts>
-        </Route>
-        <Route path="/">
-          <Home></Home>
-        </Route>
-      </Switch>
+        <Header></Header>
+        <Window title="Terminal">
+          <Console></Console>
+        </Window>
+        <Window title="Browser">
+          <Switch>
+            <Route path="/about">
+              <Posts posts={aboutPosts} title="About me"></Posts>
+            </Route>
+            <Route path="/history">
+              <Posts posts={historyPosts} title="My career history"></Posts>
+            </Route>
+            <Route path="/skillz">
+              <Posts posts={skillzPosts}></Posts>
+            </Route>
+            <Route path="/contact">
+              <Posts posts={contactPosts} title="Contact me!"></Posts>
+            </Route>
+            <Route path="/portfolio">
+              <Posts posts={protfolioPosts}></Posts>
+            </Route>
+            <Route path="/">
+              <Home></Home>
+            </Route>
+          </Switch>
+        </Window>
       </BrowserRouter>
-      <footer>
-        This website's stack
-        <ul>
-          <li>
-            React (create-react-app)
-          </li>
-          <li>
-            Typescript
-          </li>
-          <li>
-            SASS
-          </li>
-        </ul>
-      </footer>
     </div>
   );
 }

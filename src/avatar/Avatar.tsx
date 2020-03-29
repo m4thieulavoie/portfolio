@@ -1,21 +1,30 @@
-import React from 'react';
-import './Avatar.scss';
+import React from "react";
+import "./Avatar.scss";
 
 class Avatar extends React.Component<{
-    size: number
+  size: number;
+  className?: string;
+  url?: string;
 }> {
+  private defaultUrl =
+    "https://pbs.twimg.com/profile_images/1115620831391039488/liG9EQbn_bigger.jpg";
   render() {
-    const style={
-        height: this.props.size,
-        width: this.props.size,
-    }
+    const style = {
+      height: this.props.size,
+      width: this.props.size
+    };
 
-      return (
-        <div className="avatar-container">
-            <img style={style} className="avatar" src="https://media.licdn.com/dms/image/C5603AQGyWvpe2KeYJg/profile-displayphoto-shrink_200_200/0?e=1577318400&v=beta&t=zEUf_NhJmTWYxVsPpV0im6IfnTIkjBBRDo2bCDJZM0g" alt="Mathieu's avatar"/>
-        </div>
-      );
-  } 
+    return (
+      <div className="avatar-container">
+        <img
+          style={style}
+          className={"avatar " + this.props.className}
+          src={this.props.url || this.defaultUrl}
+          alt="Mathieu's avatar"
+        />
+      </div>
+    );
+  }
 }
 
 export default Avatar;
