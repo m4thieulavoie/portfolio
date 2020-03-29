@@ -2,15 +2,12 @@
 
 body {
   background-color: rgba(#cccccc, 0.45);
+  min-width: 400px;
 }
 
 img,
 iframe {
   max-width: 100%;
-}
-
-a {
-  color: #1e3da8;
 }
 
 .App {

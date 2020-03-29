@@ -3,11 +3,13 @@ import Avatar from "../avatar/Avatar";
 import "./Header.scss";
 import Emoji from "../emoji/Emoji";
 import { navigateToPage } from "../utils";
-import { useHistory } from "react-router";
+import { useHistory, useLocation } from "react-router";
 import { menu } from "../_models/Menu";
+import classNames from "classnames";
 
 function Header() {
   const history = useHistory();
+  const location = useLocation();
 
   const firstLetterUppercase = (word: string) =>
     `${word.charAt(0).toUpperCase()}${word.slice(1)}`;
@@ -23,6 +25,9 @@ function Header() {
             <li
               key={item}
               onClick={(e: any) => navigateToPage(e, `/${item}`, history)}
+              className={classNames({
+                active: location.pathname === `/${item}`
+              })}
             >
               {firstLetterUppercase(item)}
             </li>

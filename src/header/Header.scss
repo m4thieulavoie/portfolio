@@ -6,6 +6,10 @@ header.app-header {
   left: 0;
   width: 100%;
 
+  @media screen and (max-width: 640px) {
+    background-color: rgba(240, 240, 240, 1);
+  }
+
   ul {
     list-style: none;
     height: 25px;
@@ -29,7 +33,8 @@ header.app-header {
         line-height: 25px;
       }
 
-      &:hover {
+      &:hover,
+      &.active {
         background-color: #158beb;
         color: #fff;
       }
