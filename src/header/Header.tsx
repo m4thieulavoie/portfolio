@@ -33,7 +33,8 @@ function Header() {
           onClick={(e: any) => navigateToPage(e, "/contact", history)}
         >
           <Avatar size={20} className="image"></Avatar>
-          Mathieu Lavoie - Senior Software Engineer
+          <span className="name">Mathieu Lavoie</span>
+          <span className="role"> - Senior Software Engineer</span>
         </div>
       </header>
     </>

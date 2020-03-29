@@ -59,6 +59,12 @@
     max-height: 80vh;
     overflow: auto;
     min-height: 50vh;
+
+    @media screen and (max-width: 550px) {
+      word-break: break-word;
+      min-height: auto;
+      max-height: none;
+    }
   }
 
   &.expanded {

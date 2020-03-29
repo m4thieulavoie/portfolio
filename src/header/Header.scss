@@ -20,12 +20,13 @@ header.app-header {
         Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
         "Segoe UI Symbol";
 
-      &:not(:first-child) {
-        // border-left: 1px solid #222;
+      @media screen and (max-width: 640px) {
+        padding: 0 5px;
       }
 
-      &:last-child {
-        // border-left: 1px solid #222;
+      @media screen and (max-width: 440px) {
+        font-size: 12px;
+        line-height: 25px;
       }
 
       &:hover {
@@ -50,5 +51,17 @@ header.app-header {
     .image {
       margin-right: 5px;
     }
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .role {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .name {
+    display: none;
   }
 }

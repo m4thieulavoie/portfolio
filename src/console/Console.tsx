@@ -17,6 +17,7 @@ function Console() {
           <li
             key={page}
             onClick={e => navigateToPage(e as any, `/${page}`, history)}
+            className="command"
           >
             {page}
           </li>
@@ -76,13 +77,16 @@ function Console() {
           (command, i) =>
             command && (
               <div key={`${command.toString()}${i}`}>
-                visitor-PC: matmobile.co root$ {command}
+                visitor-PC: <span className="machine-name">matmobile.co </span>
+                root$ {command}
               </div>
             )
         )}
       </div>
       <div className="text-container">
-        <p>visitor-PC: matmobile.co root$</p>
+        <p>
+          visitor-PC: <span className="machine-name">matmobile.co </span> root$
+        </p>
         {/* <div className={command !== "" ? "not-empty cursor" : "cursor"}></div> */}
         <input
           className="console-input"

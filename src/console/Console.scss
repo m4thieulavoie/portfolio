@@ -59,5 +59,22 @@
         background-color: #fff;
       }
     }
+
+    @media screen and (max-width: 550px) {
+      padding: 0;
+
+      li {
+        font-size: 14px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    height: auto;
+    min-height: auto;
+
+    .machine-name {
+      display: none;
+    }
   }
 }

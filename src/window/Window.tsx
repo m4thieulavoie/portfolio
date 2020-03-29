@@ -24,7 +24,10 @@ function Window({ history, title, children }: WindowProps) {
           <div
             className="button button-green"
             onClick={() => {
-              setIsExpanded(!isExpanded);
+              const { innerWidth } = window;
+              if (innerWidth > 550) {
+                setIsExpanded(!isExpanded);
+              }
             }}
           ></div>
         </div>

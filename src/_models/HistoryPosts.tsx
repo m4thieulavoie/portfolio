@@ -22,7 +22,6 @@ export const historyPosts = [
         <iframe
           src="https://giphy.com/embed/l0Iy7zmLUiALbkna8"
           width="480"
-          height="270"
           frameBorder="0"
           className="giphy-embed"
           title="Gif 1"
@@ -49,7 +48,6 @@ export const historyPosts = [
         <iframe
           src="https://giphy.com/embed/JIX9t2j0ZTN9S"
           width="480"
-          height="480"
           frameBorder="0"
           className="giphy-embed"
           title="Gif 2"
@@ -77,7 +75,6 @@ export const historyPosts = [
         <iframe
           src="https://giphy.com/embed/IpeYSEZshTefe"
           width="480"
-          height="344"
           frameBorder="0"
           className="giphy-embed"
           title="Gif 3"
@@ -104,7 +101,6 @@ export const historyPosts = [
         <iframe
           src="https://giphy.com/embed/qLHzYjlA2FW8g"
           width="480"
-          height="209"
           frameBorder="0"
           className="giphy-embed"
           title="Gif 4"
