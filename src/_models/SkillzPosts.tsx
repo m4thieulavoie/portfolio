@@ -8,7 +8,7 @@ export const skillzPosts = [
     text: (
       <>
         <h2>Soft skillz</h2>
-        <p className="status">
+        <div className="status">
           <table>
             <thead>
               <tr>
@@ -39,7 +39,7 @@ export const skillzPosts = [
               </tr>
             </tbody>
           </table>
-        </p>
+        </div>
       </>
     )
   },
@@ -55,7 +55,7 @@ export const skillzPosts = [
     date: "2017 - now",
     text: (
       <>
-        <p className="status">
+        <div className="status">
           <ul>
             <li>Huge fan of SASS</li>
             <li>I know quite a bit on Web Components</li>
@@ -63,7 +63,7 @@ export const skillzPosts = [
             <li>Solid experience with Angular 2+</li>
             <li>Pretty good with React</li>
           </ul>
-        </p>
+        </div>
       </>
     )
   },

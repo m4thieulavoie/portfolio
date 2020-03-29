@@ -14,7 +14,7 @@ export const contactPosts = [
   {
     date: "2015 - now",
     text: (
-      <p className="status">
+      <div className="status">
         <ul>
           <li>
             <a href="https://codepen.io/matmobile">Codepen</a>
@@ -34,7 +34,7 @@ export const contactPosts = [
             <a href="https://instagram.com/matmobile">Instagram</a>
           </li>
         </ul>
-      </p>
+      </div>
     )
   }
 ] as SocialPost[];
