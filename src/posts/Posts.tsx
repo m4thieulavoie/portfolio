@@ -5,7 +5,7 @@ import Post from "../post/Post";
 
 class Posts extends React.Component<{
   title?: string;
-  posts: SocialPost[];
+  posts: readonly SocialPost[];
 }> {
   render() {
     const title = this.props.title ? (

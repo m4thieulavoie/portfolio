@@ -11,8 +11,15 @@ import Console from "./console/Console";
 import Window from "./window/Window";
 import Header from "./header/Header";
 import { protfolioPosts } from "./_models/PortfolioPosts";
+import { SocialPost } from "./_models/SocialPost";
 
 function App() {
+  const postPage = (posts: readonly SocialPost[], title: string) => (
+    <Window title={`Browser - ${title}`}>
+      <Posts posts={posts} title={title}></Posts>
+    </Window>
+  );
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -20,28 +27,23 @@ function App() {
         <Window title="Terminal">
           <Console></Console>
         </Window>
-        <Window title="Browser">
-          <Switch>
-            <Route path="/about">
-              <Posts posts={aboutPosts} title="About me"></Posts>
-            </Route>
-            <Route path="/history">
-              <Posts posts={historyPosts} title="My career history"></Posts>
-            </Route>
-            <Route path="/skillz">
-              <Posts posts={skillzPosts}></Posts>
-            </Route>
-            <Route path="/contact">
-              <Posts posts={contactPosts} title="Contact me!"></Posts>
-            </Route>
-            <Route path="/portfolio">
-              <Posts posts={protfolioPosts}></Posts>
-            </Route>
-            <Route path="/">
+
+        <Switch>
+          <Route path="/about">{postPage(aboutPosts, "About me")}</Route>
+          <Route path="/history">
+            {postPage(historyPosts, "My career history")}
+          </Route>
+          <Route path="/skillz">{postPage(skillzPosts, "My skillz")}</Route>
+          <Route path="/contact">{postPage(contactPosts, "Contact me!")}</Route>
+          <Route path="/portfolio">
+            {postPage(protfolioPosts, "Portfolio")}
+          </Route>
+          <Route path="/">
+            <Window title="Browser">
               <Home></Home>
-            </Route>
-          </Switch>
-        </Window>
+            </Window>
+          </Route>
+        </Switch>
       </BrowserRouter>
     </div>
   );
