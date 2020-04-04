@@ -1,5 +1,6 @@
 import React from "react";
 import "./Avatar.scss";
+import classNames from "classnames";
 
 class Avatar extends React.Component<{
   size: number;
@@ -18,7 +19,7 @@ class Avatar extends React.Component<{
       <div className="avatar-container">
         <img
           style={style}
-          className={"avatar " + this.props.className}
+          className={classNames(this.props.className, "avatar")}
           src={this.props.url || this.defaultUrl}
           alt="Mathieu's avatar"
         />

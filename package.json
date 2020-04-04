@@ -3,7 +3,6 @@
   "version": "1.0.1",
   "private": true,
   "author": "Mathieu Lavoie",
-  "homepage": "https://github.com/m4thieulavoie/portfolio",
   "dependencies": {
     "@types/classnames": "^2.2.10",
     "@types/jest": "^25.1.4",

@@ -1,3 +1,5 @@
+@import "../_sass/colors";
+
 .app-header {
   background-color: rgba(240, 240, 240, 0.8);
   height: 25px;
@@ -37,12 +39,12 @@
 
       &:hover,
       &.active {
-        background-color: #158beb;
-        color: #fff;
+        background-color: $blue-300;
+        color: $white;
       }
 
       &:active {
-        background-color: darken(#158beb, 10%);
+        background-color: darken($blue-300, 10%);
       }
     }
   }
@@ -67,8 +69,8 @@
     }
 
     &:hover {
-      background-color: #158beb;
-      color: #fff;
+      background-color: $blue-300;
+      color: $white;
     }
   }
 
@@ -87,7 +89,7 @@
       display: none;
     }
   }
-  
+
   @media screen and (max-width: 580px) {
     .name {
       display: none;

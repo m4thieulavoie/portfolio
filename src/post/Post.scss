@@ -1,5 +1,8 @@
+@import "../_sass/colors";
+@import "../_sass/variables";
+
 .post {
-  background-color: rgba(#fff, 0.7);
+  background-color: rgba($white, 0.7);
   border-radius: 8px;
   margin: 0 auto 30px;
   max-width: 500px;
@@ -19,7 +22,7 @@
 
   h2,
   .status {
-    font-family: "Lato", sans-serif;
+    font-family: $title-font;
   }
 
   .status {

@@ -1,9 +1,15 @@
+@import "../_sass/colors";
+@import "../_sass/variables";
+
+$console-bg-color: #121212;
+$console-font-color: #c3c2c3;
+
 .console {
   align-items: flex-start;
-  background-color: rgba(#121212, 0.85);
+  background-color: rgba($console-bg-color, 0.85);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  color: #c3c2c3;
+  color: $console-font-color;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -14,7 +20,7 @@
   input,
   li,
   div {
-    font-family: menlo, consolas, monospace;
+    font-family: $mono-font;
     font-size: 16px;
     margin: 0;
   }
@@ -36,10 +42,10 @@
   .console-input {
     background-color: transparent;
     border: 0;
-    caret-color: #c3c2c3;
+    caret-color: $console-font-color;
     color: transparent;
     margin-left: 10px;
-    text-shadow: 0 0 0 #c3c2c3;
+    text-shadow: 0 0 0 $console-font-color;
 
     &:focus {
       outline: none;
@@ -55,8 +61,8 @@
       margin: 0 5px;
 
       &:hover {
-        background-color: #fff;
-        color: #121212;
+        background-color: $white;
+        color: $console-bg-color;
       }
     }
 

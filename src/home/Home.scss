@@ -1,10 +1,12 @@
+@import "../_sass/variables";
+
 .home-avatar {
   border: 5px solid #eee;
   margin: 60px auto;
 }
 
 .home-content {
-  font-family: "Lato", sans-serif;
+  font-family: $title-font;
   text-align: center;
 
   .button-container {

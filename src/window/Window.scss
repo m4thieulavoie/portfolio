@@ -1,5 +1,8 @@
+@import "../_sass/colors";
+@import "../_sass/variables";
+
 .window-container {
-  background-color: rgba(#fff, 0.7);
+  background-color: rgba($white, 0.7);
   border-radius: 5px;
   margin: 5px;
   width: 50%;
@@ -24,7 +27,7 @@
     .title {
       color: #ddd;
       flex-grow: 1;
-      font-family: menlo, consolas, monospace;
+      font-family: $mono-font;
       text-align: center;
       user-select: none;
     }
@@ -68,7 +71,7 @@
   }
 
   &.expanded {
-    background-color: rgba(#fff, 0.85);
+    background-color: rgba($white, 0.85);
     height: calc(100vh - 25px);
     left: 0;
     max-width: 100%;

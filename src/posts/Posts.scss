@@ -1,5 +1,7 @@
+@import "../_sass/variables";
+
 .posts-header {
-  font-family: "Lato", sans-serif;
+  font-family: $title-font;
   margin-left: 15px;
 }
 
