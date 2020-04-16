@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 @import "_sass/colors";
+@import "_sass/variables";
 
 body {
   background-color: rgba(#ccc, 0.45);
@@ -9,6 +10,16 @@ body {
 img,
 iframe {
   max-width: 100%;
+}
+
+code {
+  background-color: #ddd;
+  cursor: pointer;
+  font-family: $mono-font;
+
+  &:hover {
+    background-color: #ccc;
+  }
 }
 
 .app {

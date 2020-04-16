@@ -20,6 +20,11 @@
     }
   }
 
+  img {
+    display: block;
+    margin: auto;
+  }
+
   h2,
   .status {
     font-family: $title-font;
