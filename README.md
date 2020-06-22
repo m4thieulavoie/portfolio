@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/55407d98-d92e-4bfd-881a-9f5ef1a9f503/deploy-status)](https://app.netlify.com/sites/gallant-goodall-8c025a/deploys)
+
 # Welcome to my online portfolio!
 
 Hi! My name is Mathieu Lavoie and this is the repo of my online portfolio.
