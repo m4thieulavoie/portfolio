@@ -47,7 +47,7 @@
     "@typescript-eslint/parser": "3.3.0",
     "eslint": "7.0.0",
     "eslint-config-google": "0.14.0",
-    "eslint-plugin-react": "7.20.0",
+    "eslint-plugin-react": "7.20.3",
     "stylelint": "13.6.1",
     "stylelint-config-standard": "20.0.0",
     "stylelint-order": "4.1.0"
