@@ -1,7 +1,7 @@
 import React from "react";
 import { SocialPost } from "./SocialPost";
 
-export const protfolioPosts = [
+export const protfolioPosts: SocialPost[] = [
   {
     date: "Since end of 2018",
     text: (
@@ -72,4 +72,4 @@ export const protfolioPosts = [
       </>
     ),
   },
-] as SocialPost[];
+];

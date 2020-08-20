@@ -41,7 +41,7 @@ export const skillzPosts = [
           </table>
         </div>
       </>
-    )
+    ),
   },
   {
     date: "November 2018 - undefined",
@@ -49,7 +49,7 @@ export const skillzPosts = [
       <>
         <p className="status">Big defender of the DRY principles</p>
       </>
-    )
+    ),
   },
   {
     date: "2017 - now",
@@ -65,7 +65,7 @@ export const skillzPosts = [
           </ul>
         </div>
       </>
-    )
+    ),
   },
   {
     date: "2008 - 2017",
@@ -75,7 +75,7 @@ export const skillzPosts = [
           I loved PHP for way longer than I'd like to admit.
         </p>
       </>
-    )
+    ),
   },
   {
     date: "2007 - now",
@@ -85,6 +85,6 @@ export const skillzPosts = [
           I am in love with HTML and CSS <Emoji emoji="❤️"></Emoji>
         </p>
       </>
-    )
-  }
+    ),
+  },
 ] as SocialPost[];
