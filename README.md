@@ -28,4 +28,4 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `npm lint`
 
-Runs the lint over the project with both `esling` and `stylelint` to make sure your eyes are happy reading the code.
+Runs the lint over the project with both `eslint` and `stylelint` to make sure your eyes are happy reading the code.
