@@ -2,6 +2,7 @@ import React from "react";
 import "./Posts.scss";
 import { SocialPost } from "../_models/SocialPost";
 import Post from "../post/Post";
+import PageHeader from "../page-header/PageHeader";
 
 class Posts extends React.Component<{
   title?: string;
@@ -9,7 +10,7 @@ class Posts extends React.Component<{
 }> {
   render() {
     const title = this.props.title ? (
-      <h1 className="posts-header">{this.props.title}</h1>
+      <PageHeader title={this.props.title} />
     ) : (
       <div className="spacer"></div>
     );

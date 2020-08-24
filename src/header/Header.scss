@@ -8,8 +8,20 @@
   top: 0;
   width: 100%;
 
-  @media screen and (max-width: 640px) {
-    background-color: rgba(240, 240, 240, 1);
+  li {
+    @media screen and (max-width: 640px) {
+      display: flex;
+      flex-direction: column;
+      transition: 300ms all;
+    }
+
+    .emoji {
+      font-size: 28px;
+
+      @media screen and (min-width: 641px) {
+        display: none;
+      }
+    }
   }
 
   ul {
@@ -46,6 +58,40 @@
       &:active {
         background-color: darken($blue-300, 10%);
       }
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    background-color: transparent;
+    bottom: 0;
+    height: auto;
+    top: auto;
+
+    ul {
+      align-items: center;
+      backdrop-filter: blur(10px);
+      background-color: rgba(#fff, 0.5);
+      border: 1px solid #d3d3d3;
+      border-radius: 15px;
+      display: flex;
+      height: auto;
+      justify-content: flex-start;
+      margin: 0 30px 10px;
+      overflow-x: auto;
+      padding: 20px;
+
+      li {
+        border-radius: 15px;
+        margin: 0 4px;
+        min-width: 60px;
+        padding: 10px;
+        text-align: center;
+      }
+    }
+
+    .main-avatar,
+    ul li:first-child {
+      display: none !important;
     }
   }
 

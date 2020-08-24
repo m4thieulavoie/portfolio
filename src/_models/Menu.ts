@@ -1,8 +1,26 @@
 export const menu = [
-  "home",
-  "about",
-  "history",
-  "skillz",
-  "portfolio",
-  "contact"
+  {
+    name: "home",
+    emoji: "🏡",
+  },
+  {
+    name: "about",
+    emoji: "😃",
+  },
+  {
+    name: "history",
+    emoji: "📖",
+  },
+  {
+    name: "skillz",
+    emoji: "📈",
+  },
+  {
+    name: "portfolio",
+    emoji: "🎨",
+  },
+  {
+    name: "contact",
+    emoji: "✏️",
+  },
 ];

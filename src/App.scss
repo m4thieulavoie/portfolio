@@ -26,6 +26,7 @@ code {
   align-items: center;
   background-attachment: fixed;
   background-image: url("https://i.redd.it/m8c20gchf7231.jpg");
+  background-position: center;
   background-size: cover;
   display: flex;
   height: 100vh;
@@ -74,5 +75,12 @@ code {
     color: $white;
     opacity: 0.85;
     text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  /* stylelint-disable */
+  #bmc-wbtn {
+    display: none !important;
   }
 }

@@ -4,6 +4,7 @@ import Avatar from "../avatar/Avatar";
 import { useHistory } from "react-router";
 import { navigateToPage } from "../utils";
 import { rightArrow } from "./right-arrow";
+import PageHeader from "../page-header/PageHeader";
 
 function Home() {
   const history = useHistory();
@@ -14,6 +15,7 @@ function Home() {
 
   return (
     <>
+      <PageHeader title="Home" />
       <Avatar size={250} url="/images/me.png" className="home-avatar"></Avatar>
       <div className="home-content">
         <h1>Welcome to my online resume!</h1>

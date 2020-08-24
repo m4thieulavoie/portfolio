@@ -24,7 +24,7 @@ function App() {
     <div className="app">
       <BrowserRouter>
         <Header></Header>
-        <Window title="Terminal">
+        <Window title="Terminal" hiddenOnMobile={true}>
           <Console></Console>
         </Window>
 

@@ -13,13 +13,13 @@ function Console() {
       {"help"}
       <p>Valid commands are</p>
       <ul className="commands-menu">
-        {menu.map(page => (
+        {menu.map(({ name }) => (
           <li
-            key={page}
-            onClick={e => navigateToPage(e as any, `/${page}`, history)}
+            key={name}
+            onClick={(e) => navigateToPage(e as any, `/${name}`, history)}
             className="command"
           >
-            {page}
+            {name}
           </li>
         ))}
       </ul>
@@ -35,7 +35,7 @@ function Console() {
     "",
     "",
     "",
-    helpCommand
+    helpCommand,
   ];
   const [commands, setCommands] = useState<(string | JSX.Element | null)[]>(
     initialCommands
@@ -54,7 +54,7 @@ function Console() {
   };
 
   const navigate = () => {
-    if (menu.find(page => page === command)) {
+    if (menu.find(({ name }) => name === command)) {
       history.push(`/${command}`);
     }
 
@@ -63,7 +63,7 @@ function Console() {
     } else {
       setCommands([
         ...commands,
-        command === "help" ? helpCommand : spiceCommand(command)
+        command === "help" ? helpCommand : spiceCommand(command),
       ]);
     }
 
@@ -92,10 +92,10 @@ function Console() {
           className="console-input"
           type="text"
           value={command}
-          onChange={event => {
+          onChange={(event) => {
             setCommand(event.currentTarget.value);
           }}
-          onKeyPress={event => {
+          onKeyPress={(event) => {
             if (event.key === "Enter") {
               navigate();
             }

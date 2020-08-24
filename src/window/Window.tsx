@@ -5,9 +5,10 @@ import "./Window.scss";
 interface WindowProps extends RouteComponentProps {
   title?: string;
   children: React.ReactNode;
+  hiddenOnMobile?: boolean;
 }
 
-function Window({ history, title, children }: WindowProps) {
+function Window({ history, hiddenOnMobile, title, children }: WindowProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   // On route change, never stay expanded
@@ -16,7 +17,11 @@ function Window({ history, title, children }: WindowProps) {
   });
 
   return (
-    <div className={`window-container ${isExpanded ? "expanded" : ""}`}>
+    <div
+      className={`window-container ${hiddenOnMobile ? "hiddable" : ""} ${
+        isExpanded ? "expanded" : ""
+      }`}
+    >
       <header>
         <div className="buttons">
           <div className="button disabled button-red"></div>

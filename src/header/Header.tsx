@@ -21,15 +21,16 @@ function Header() {
           <li onClick={(e: any) => navigateToPage(e, "/", history)}>
             Reset <Emoji emoji="🔄" />
           </li>
-          {menu.map(item => (
+          {menu.map(({ name, emoji }) => (
             <li
-              key={item}
-              onClick={(e: any) => navigateToPage(e, `/${item}`, history)}
+              key={name}
+              onClick={(e: any) => navigateToPage(e, `/${name}`, history)}
               className={classNames({
-                active: location.pathname === `/${item}`
+                active: location.pathname === `/${name}`,
               })}
             >
-              {firstLetterUppercase(item)}
+              <Emoji emoji={emoji} className={"emoji"} />
+              {firstLetterUppercase(name)}
             </li>
           ))}
         </ul>
