@@ -16,6 +16,10 @@ export const menu = [
     emoji: "📈",
   },
   {
+    name: "publications",
+    emoji: "📚",
+  },
+  {
     name: "portfolio",
     emoji: "🎨",
   },

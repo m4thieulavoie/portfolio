@@ -1,6 +1,5 @@
 import React from "react";
 import { SocialPost } from "./SocialPost";
-import Emoji from "../emoji/Emoji";
 
 export const historyPosts = [
   {
@@ -8,27 +7,31 @@ export const historyPosts = [
     text: (
       <>
         <p className="status">
-          Working{" "}
+          Started working{" "}
           <a
             href="https://www.logmein.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
             @LogMeIn
-          </a>
-          . Since April 2020, I am officially a Senior Software Engineer{" "}
-          <Emoji emoji="💪"></Emoji>
+          </a>{" "}
+          as a Software Engineer. I got to work in JavaScript, Typescript,
+          Redux, Angular 2+ and React.
         </p>
-        <iframe
-          src="https://giphy.com/embed/l0Iy7zmLUiALbkna8"
-          width="480"
-          frameBorder="0"
-          className="giphy-embed"
-          title="Gif 1"
-          allowFullScreen
-        ></iframe>
+        <p className="status">
+          Since April 2020, I am officially a Senior Software Engineer working
+          as a Tech Lead in our internal Design System. Hardcore Typescript,
+          SASS and HTML are now part of my daily routine.
+        </p>
+        <p className="status">
+          I took advantage of Covid-19 to give a shot at writing blog posts on{" "}
+          <a href="" target="_blank" rel="norefferer">
+            dev.to
+          </a>{" "}
+          and contributing to the Open Source community.
+        </p>
       </>
-    )
+    ),
   },
   {
     date: "May 2018 - November 2018",
@@ -43,7 +46,7 @@ export const historyPosts = [
           >
             @LGS
           </a>
-          . Been there for roughly 6 months
+          . Been there for roughly 6 months. Coded in Java, JSP and JavaScript.
         </p>
         <iframe
           src="https://giphy.com/embed/JIX9t2j0ZTN9S"
@@ -54,7 +57,7 @@ export const historyPosts = [
           allowFullScreen
         ></iframe>
       </>
-    )
+    ),
   },
   {
     date: "April 2015 - May 2018",
@@ -70,7 +73,7 @@ export const historyPosts = [
             @PG Solutions
           </a>
           . Started my career there and have been coding as a full stack dev for
-          about 3 years
+          about 3 years. Did mostly ASP.NET and a tiny bit of jQuery.
         </p>
         <iframe
           src="https://giphy.com/embed/IpeYSEZshTefe"
@@ -81,7 +84,7 @@ export const historyPosts = [
           allowFullScreen
         ></iframe>
       </>
-    )
+    ),
   },
   {
     date: "May 2015",
@@ -107,6 +110,6 @@ export const historyPosts = [
           allowFullScreen
         ></iframe>
       </>
-    )
-  }
+    ),
+  },
 ] as SocialPost[];

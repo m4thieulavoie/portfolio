@@ -7,7 +7,20 @@ export const skillzPosts = [
     date: "November 2018 - undefined",
     text: (
       <>
-        <h2>Soft skillz</h2>
+        <h2>Front-end skills</h2>
+        <div className="status">
+          For the past 10+ years, I've sharpened my front-end skills with
+          different strategies. Lately, I've been exposed to a <i>lot</i> of
+          JavaScript, SASS, HTML, React and Web Components
+        </div>
+      </>
+    ),
+  },
+  {
+    date: "November 2018 - undefined",
+    text: (
+      <>
+        <h2>Soft skills</h2>
         <div className="status">
           <table>
             <thead>
@@ -27,27 +40,23 @@ export const skillzPosts = [
               </tr>
               <tr>
                 <td>I love teamwork</td>
-                <td></td>
+                <td>I loved PHP for way longer than I'd like to admit.</td>
               </tr>
               <tr>
-                <td>I work hard</td>
-                <td></td>
+                <td>Hard worker</td>
+                <td>I overuse emojis</td>
               </tr>
               <tr>
                 <td>UI details matter to me</td>
                 <td></td>
               </tr>
+              <tr>
+                <td>Big defender of the DRY principles</td>
+                <td></td>
+              </tr>
             </tbody>
           </table>
         </div>
-      </>
-    ),
-  },
-  {
-    date: "November 2018 - undefined",
-    text: (
-      <>
-        <p className="status">Big defender of the DRY principles</p>
       </>
     ),
   },
@@ -64,26 +73,6 @@ export const skillzPosts = [
             <li>Pretty good with React</li>
           </ul>
         </div>
-      </>
-    ),
-  },
-  {
-    date: "2008 - 2017",
-    text: (
-      <>
-        <p className="status">
-          I loved PHP for way longer than I'd like to admit.
-        </p>
-      </>
-    ),
-  },
-  {
-    date: "2007 - now",
-    text: (
-      <>
-        <p className="status">
-          I am in love with HTML and CSS <Emoji emoji="❤️"></Emoji>
-        </p>
       </>
     ),
   },

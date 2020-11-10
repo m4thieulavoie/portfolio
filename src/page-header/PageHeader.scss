@@ -1,6 +1,3 @@
-@import "../_sass/colors";
-@import "../_sass/variables";
-
 .posts-header {
   align-items: center;
   background-color: rgba(#333, 0.7);
@@ -13,9 +10,9 @@
 
   h1 {
     background-color: rgba(#fff, 0.5);
-    border-radius: 10px;
+    border-radius: var(--radius-small);
     color: #222;
-    font-family: $title-font;
+    font-family: var(--font-title);
     font-size: 14px;
     margin: 0;
     padding: 5px 30px;
@@ -27,7 +24,7 @@
     display: none;
   }
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 740px) {
     background-color: #fff;
     justify-content: space-between;
     padding: 20px 10px;
@@ -42,7 +39,7 @@
       align-items: center;
       background: none;
       border: 0;
-      color: $blue-300;
+      color: var(--blue-300);
       cursor: pointer;
       display: inline-flex;
       font-size: 14px;
@@ -57,7 +54,7 @@
 }
 
 .arrow {
-  border: solid $blue-300;
+  border: solid var(--blue-300);
   border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 3px;

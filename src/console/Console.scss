@@ -1,14 +1,11 @@
-@import "../_sass/colors";
-@import "../_sass/variables";
-
 $console-bg-color: #121212;
 $console-font-color: #c3c2c3;
 
 .console {
   align-items: flex-start;
   background-color: rgba($console-bg-color, 0.85);
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: var(--radius-small);
+  border-bottom-right-radius: var(--radius-small);
   color: $console-font-color;
   display: flex;
   flex-direction: column;
@@ -20,7 +17,7 @@ $console-font-color: #c3c2c3;
   input,
   li,
   div {
-    font-family: $mono-font;
+    font-family: var(--font-mono);
     font-size: 16px;
     margin: 0;
   }
@@ -55,13 +52,14 @@ $console-font-color: #c3c2c3;
   .commands-menu {
     display: flex;
     list-style: none;
+    padding: 0 0 0 10px;
 
     li {
       cursor: pointer;
       margin: 0 5px;
 
       &:hover {
-        background-color: $white;
+        background-color: var(--white);
         color: $console-bg-color;
       }
     }

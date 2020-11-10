@@ -23,7 +23,7 @@ export const protfolioPosts: SocialPost[] = [
     text: (
       <>
         <h2>sass-to-string</h2>
-        <p>
+        <p className="status">
           Nifty webpack loader that converts a <code>.scss</code> file into a
           javascript string.{" "}
           <a

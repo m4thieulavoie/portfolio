@@ -7,6 +7,7 @@ import { contactPosts } from "./_models/ContactPosts";
 import { historyPosts } from "./_models/HistoryPosts";
 import { aboutPosts } from "./_models/AboutPosts";
 import { skillzPosts } from "./_models/SkillzPosts";
+import { publications } from "./_models/PublicationPosts";
 import Console from "./console/Console";
 import Window from "./window/Window";
 import Header from "./header/Header";
@@ -35,6 +36,9 @@ function App() {
           </Route>
           <Route path="/skillz">{postPage(skillzPosts, "My skillz")}</Route>
           <Route path="/contact">{postPage(contactPosts, "Contact me!")}</Route>
+          <Route path="/publications">
+            {postPage(publications, "Publications")}
+          </Route>
           <Route path="/portfolio">
             {postPage(protfolioPosts, "Portfolio")}
           </Route>
