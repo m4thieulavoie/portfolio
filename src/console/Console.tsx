@@ -26,7 +26,7 @@ function Console() {
     </>
   );
   const initialCommands = [
-    <span>
+    <span key="hey">
       Hi, I'm Mathieu Lavoie <Emoji emoji="👋"></Emoji>
     </span>,
     `I'm a Senior Software engineer`,
