@@ -29,7 +29,7 @@ function Console() {
     <span key="hey">
       Hi, I'm Mathieu Lavoie <Emoji emoji="👋"></Emoji>
     </span>,
-    `I'm a Senior Software engineer`,
+    `I'm a Senior Software developer`,
     "",
     "",
     "",

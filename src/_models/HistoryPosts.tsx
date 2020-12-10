@@ -15,11 +15,11 @@ export const historyPosts = [
           >
             @LogMeIn
           </a>{" "}
-          as a Software Engineer. I got to work in JavaScript, Typescript,
+          as a Software Developer. I got to work in JavaScript, Typescript,
           Redux, Angular 2+ and React.
         </p>
         <p className="status">
-          Since April 2020, I am officially a Senior Software Engineer working
+          Since April 2020, I am officially a Senior Software Developer working
           as a Tech Lead in our internal Design System. Hardcore Typescript,
           SASS and HTML are now part of my daily routine.
         </p>

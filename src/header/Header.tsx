@@ -40,7 +40,7 @@ function Header() {
         >
           <Avatar size={20} className="image"></Avatar>
           <span className="name">Mathieu Lavoie</span>
-          <span className="role"> - Senior Software Engineer</span>
+          <span className="role"> - Tech Lead</span>
         </div>
       </header>
     </>
