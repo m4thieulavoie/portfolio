@@ -1,51 +1,34 @@
-# webcomponents-starter
+# Mathie
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/55407d98-d92e-4bfd-881a-9f5ef1a9f503/deploy-status)](https://app.netlify.com/sites/gallant-goodall-8c025a/deploys)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-`webcomponents-starter` aims to be a battery-included starter project for any Web Components enthousiasth. Its goal is to accelerate your development process by providing all the behind-the-scenes tools, such as
+# Welcome to my online portfolio!
 
-- Webpack
-- Typescript
-- SASS
-- Prettier/eslint/stylelint
-- A few Web Components examples (Made with FAST here)
-- vaadin router
+Hi! My name is Mathieu Lavoie and this is the repo of my online portfolio.
 
-This repo is based on this [vaadin article](https://vaadin.com/learn/tutorials/using-web-components) for Web Components in Webpack, and this [Webpack article](https://webpack.js.org/guides/typescript/) for the Typescript support
+## Available Scripts
 
-## Getting started
+In the project directory, you can run the following commands:
 
-### Clone the project
+### `npm start`
 
-```bash
-git clone git@github.com:m4thieulavoie/webcomponents-starter.git
-```
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### Install dependencies
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-Then, to init the project
+### `npm build`
 
-```bash
-cd webcomponents-starter
-npm install
-```
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### Start the project
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-If you want to run the project, simply run
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-```bash
-npm start
-```
+### `npm lint`
 
-`Webpack` will then indicate you to open `localhost:3000`. When you'll do so, you'll see the project running.
-
-## Web Components
-
-### Underlying framework
-
-For the sake of this project, we rely on [FAST Components](https://github.com/microsoft/fast) to accelerate the development of components. Definitely feel free to get rid of the dependency and add your favourite framework if you feel like it!
-
-### Polyfills
-
-We provide `@webcomponents/webcomponentsjs` in the project, but disabled it by default (for bundle size reasons). If you want to support older browsers, head in `index.ts` and uncomment the line that `require`s `webcomponentsjs`.
+Runs the lint over the project with both `eslint` and `stylelint` to make sure your eyes are happy reading the code.

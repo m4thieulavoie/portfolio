@@ -8,7 +8,7 @@
     "start": "webpack serve",
     "lint": "eslint --ext .ts, src/ && npx stylelint \"src/**/*.scss\"",
     "clean": "rimraf dist",
-    "build": "npm run clean && webpack"
+    "build": "npm run clean && npm run lint && tsx"
   },
   "repository": {
     "type": "git",
@@ -45,8 +45,7 @@
   },
   "dependencies": {
     "@microsoft/fast-element": "0.21.1",
-    "@vaadin/router": "1.7.2",
-    "@webcomponents/webcomponentsjs": "2.5.0"
+    "@vaadin/router": "1.7.2"
   },
   "browserslist": {
     "development": [

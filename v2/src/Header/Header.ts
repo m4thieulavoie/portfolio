@@ -1,13 +1,35 @@
 import { FASTElement, customElement, html } from "@microsoft/fast-element";
+import { menu } from "../common/menu";
+import { navigateToPage } from "../common/utils";
 import styles from "./Header.scss";
 
-const template = html`
-  <a href="/">Home</a><a href="/nsdfoig">Random non existing page</a><a href="https://github.com/m4thieulavoie/webcomponents-starter" target="_blank">View in GitHub</a>
+const firstLetterUppercase = (word: string) =>
+  `${word.charAt(0).toUpperCase()}${word.slice(1)}`;
+
+const template = html<HeaderComponent>`
+  <ul></ul>
+  <div class="main-avatar" @click=${(e: any) => navigateToPage(e, "/contact")}>
+    <mathieu-avatar size="1"></mathieu-avatar>
+    <span class="name">Mathieu Lavoie</span>
+    <span class="role"> - Tech Lead</span>
+  </div>
 `;
 
 @customElement({
-  name: "wcs-header",
+  name: "mathieu-header",
   template,
   styles,
 })
-export default class HeaderComponent extends FASTElement {}
+export default class HeaderComponent extends FASTElement {
+  connectedCallback() {
+    super.connectedCallback();
+
+    const list = this.shadowRoot.querySelector("ul");
+    [{ name: "Reset", emoji: "🔄" }, ...menu].forEach(({ emoji, name }, i) => {
+      const listItem = document.createElement("li");
+      listItem.onclick = (e) => navigateToPage(e, i === 0 ? "/" : name);
+      listItem.textContent = `${firstLetterUppercase(name)} ${emoji}`;
+      list.append(listItem);
+    });
+  }
+}

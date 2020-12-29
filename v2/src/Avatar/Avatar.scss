@@ -1,0 +1,12 @@
+:host {
+  display: inline-flex;
+}
+
+:host,
+img {
+  border-radius: var(--radius-large);
+}
+
+img {
+  object-fit: cover;
+}

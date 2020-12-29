@@ -20,6 +20,10 @@ module.exports = () => ({
         test: /\.scss$/i,
         use: ["sass-to-string", "sass-loader"],
       },
+      {
+        test: /\.(woff2?|jpe?g|png|gif|ico)$/,
+        use: "file-loader?name=./assets/images/[name].[ext]",
+      },
     ],
   },
   resolve: {
