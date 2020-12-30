@@ -1,8 +1,12 @@
-.avatar-container {
-  text-align: center;
+:host {
+  display: inline-flex;
+}
 
-  .avatar {
-    border-radius: var(--radius-large);
-    object-fit: cover;
-  }
+:host,
+img {
+  border-radius: var(--radius-large);
+}
+
+img {
+  object-fit: cover;
 }

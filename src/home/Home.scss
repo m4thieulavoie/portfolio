@@ -1,8 +1,13 @@
-@import "../_sass/variables";
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
 
-.home-avatar {
-  border: 5px solid #eee;
-  margin: 60px auto;
+  mathieu-avatar {
+    border: 5px solid #eee;
+    margin: 60px auto;
+  }
 }
 
 .home-content {
@@ -39,12 +44,17 @@
   }
 
   h1,
-  h4 {
+  h2 {
     color: #222;
     margin: 5px auto 0;
+  }
+
+  h2 {
+    font-size: 1rem;
   }
 }
 
 .button-container button img {
+  height: 2rem;
   opacity: 0.5;
 }

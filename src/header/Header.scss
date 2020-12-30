@@ -1,4 +1,4 @@
-.app-header {
+:host {
   background-color: rgba(240, 240, 240, 0.8);
   height: 25px;
   left: 0;
@@ -99,8 +99,10 @@
   }
 
   .main-avatar {
+    align-items: center;
     cursor: pointer;
     display: flex;
+    gap: 5px;
     height: 100%;
     padding: 0 5px;
     position: absolute;
@@ -113,7 +115,7 @@
       display: flex;
     }
 
-    .image {
+    .mathieu-avatar {
       margin-right: 5px;
     }
 
