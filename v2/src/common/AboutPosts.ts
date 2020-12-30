@@ -1,5 +1,6 @@
 import { html } from "@microsoft/fast-element";
 import { SocialPost } from "./SocialPost";
+import cats from "../../images/cats.jpg";
 
 export const aboutPosts = [
   {
@@ -7,7 +8,7 @@ export const aboutPosts = [
     text: html`<p class="status">
         I love cats 😻 Here are Salem and Alfred cuddling at home
       </p>
-      <img src="/images/cats.jpg" alt="My cats" />`,
+      <img src="${cats}" alt="My cats" />`,
   },
   {
     date: "2015 - now",

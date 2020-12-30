@@ -1,5 +1,8 @@
 import { html } from "@microsoft/fast-element";
 import { SocialPost } from "./SocialPost";
+import mca from "../../images/mca.png";
+import yvanthibault from "../../images/yvanthibault.png";
+import plabonte from "../../images/plabonte.png";
 
 export const protfolioPosts: SocialPost[] = [
   {
@@ -38,18 +41,18 @@ export const protfolioPosts: SocialPost[] = [
     date: "2019",
     text: html`<h2>Magazine Web Motoneiges.ca</h2>
       <p>Did a Front-End refresh for the whole Magazine</p>
-      <img src="/images/mca.png" alt="Magazine Web Motoneiges.ca" />`,
+      <img src="${mca}" alt="Magazine Web Motoneiges.ca" />`,
   },
   {
     date: "2018",
     text: html`<h2>Garage Yvan Thibault</h2>
       <p>Did a Front-End app for the vehicule dealer</p>
-      <img src="/images/yvanthibault.png" alt="Garage Yvan Thibault" />`,
+      <img src="${yvanthibault}" alt="Garage Yvan Thibault" />`,
   },
   {
     date: "2018",
     text: html`<h2>P. Labonté & Fils</h2>
       <p>Did a Front-End app for the vehicule dealer</p>
-      <img src="/images/plabonte.png" alt="P. Labonté & Fils" />`,
+      <img src="${plabonte}" alt="P. Labonté & Fils" />`,
   },
 ];

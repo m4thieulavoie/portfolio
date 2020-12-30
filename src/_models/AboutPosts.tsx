@@ -11,7 +11,7 @@ export const aboutPosts = [
         cuddling at home
         <img src="/images/cats.jpg" alt="My cats" />
       </p>
-    )
+    ),
   },
   {
     date: "2015 - now",
@@ -20,7 +20,7 @@ export const aboutPosts = [
         I like going to the gym <Emoji emoji="💪"></Emoji> Too bad I love
         cookies this much <Emoji emoji="🍪"></Emoji>
       </p>
-    )
+    ),
   },
   {
     date: "2010 - now",
@@ -42,6 +42,6 @@ export const aboutPosts = [
           alt="Yes, I like snowmobiling"
         />
       </>
-    )
-  }
+    ),
+  },
 ] as SocialPost[];

@@ -5,6 +5,7 @@ import {
   attr,
 } from "@microsoft/fast-element";
 import styles from "./Avatar.scss";
+import me from "../../images/me.png";
 
 const template = html<AvatarComponent>`<img
   src="${(x) => x.url}"
@@ -19,5 +20,5 @@ const template = html<AvatarComponent>`<img
 })
 export default class AvatarComponent extends FASTElement {
   @attr size = 15;
-  @attr url = "/images/me.png";
+  @attr url = me;
 }
