@@ -6,7 +6,7 @@ import styles from "./Portfolio.scss";
 @customElement({
   name: "mathieu-portfolio",
   template: generatePostsPageTemplate<PortfolioComponent>(
-    "Skillz",
+    "Portfolio",
     protfolioPosts
   ),
   styles,

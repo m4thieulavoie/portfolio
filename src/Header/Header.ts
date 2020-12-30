@@ -7,7 +7,7 @@ const firstLetterUppercase = (word: string) =>
   `${word.charAt(0).toUpperCase()}${word.slice(1)}`;
 
 const template = html<HeaderComponent>`
-  <ul></ul>
+  <ul tabindex="0"></ul>
   <div class="main-avatar" @click=${(e: any) => navigateToPage(e, "/contact")}>
     <mathieu-avatar size="1"></mathieu-avatar>
     <span class="name">Mathieu Lavoie</span>
@@ -27,6 +27,7 @@ export default class HeaderComponent extends FASTElement {
     const list = this.shadowRoot.querySelector("ul");
     [{ name: "Reset", emoji: "🔄" }, ...menu].forEach(({ emoji, name }, i) => {
       const listItem = document.createElement("li");
+      listItem.setAttribute("tabindex", "0");
       const computedName = name === "home" ? "/" : name;
       const pageUrl = i === 0 ? "/" : computedName;
       listItem.onclick = (e) => navigateToPage(e, pageUrl);

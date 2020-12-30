@@ -67,16 +67,30 @@
 
   .posts-header {
     display: flex;
+    outline: 0;
+
+    &:focus-visible {
+      outline: 1px solid var(--outline-color);
+    }
   }
 
   button {
     display: none;
+
+    &:focus-visible {
+      border: 1px solid var(--outline-color);
+    }
   }
 
   .content {
     max-height: 80vh;
     min-height: 50vh;
+    outline: 0;
     overflow: auto;
+
+    &:focus-visible {
+      outline: 1px solid var(--outline-color);
+    }
 
     @media screen and (max-width: 550px) {
       max-height: none;

@@ -4,6 +4,7 @@ import {
   html,
   attr,
 } from "@microsoft/fast-element";
+import { navigateToPage } from "../common/utils";
 import styles from "./Window.scss";
 
 const template = html`<header>
@@ -15,13 +16,15 @@ const template = html`<header>
 
     <slot name="title"></slot>
   </header>
-  <div class="posts-header">
-    <button>
+  <div class="posts-header" tabindex="0">
+    <button tabindex="0" @click=${() => navigateToPage(undefined, "/")}>
       <i class="arrow left"></i>
       Home
     </button>
     <slot name="name"></slot>
-    <button>Contact me</button>
+    <button tabindex="0" @click=${() => navigateToPage(undefined, "contact")}>
+      Contact me
+    </button>
   </div>
   <div class="content" tabindex="0">
     <slot></slot>

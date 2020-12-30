@@ -1,7 +1,11 @@
 :host {
   display: grid;
-  grid-template-columns: 50% 50% 100%;
+  grid-template-columns: 50% 50%;
   height: 100%;
+
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: 60% 40%;
+  }
 
   @media screen and (max-width: 740px) {
     mathieu-window {
