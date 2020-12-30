@@ -18,8 +18,8 @@ export const generatePostsPageTemplate = <T extends FASTElement>(
   <ul>
     ${repeat(
       () => posts,
-      html<SocialPost, T>`<mathieu-post
-        >${(x) => x.text}<small slot="date"
+      html<SocialPost, T>`<mathieu-post>
+        ${(x) => x.text}<small slot="date"
           >${(x) => x.date}</small
         ></mathieu-post
       >`

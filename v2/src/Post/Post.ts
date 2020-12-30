@@ -8,6 +8,8 @@ const template = html`<div class="header">
       <p>@m4thieulavoie</p>
     </div>
   </div>
+  <slot name="title"></slot>
+  <slot name="cover"></slot>
   <slot></slot>
   <footer>
     <small>⏱ <slot name="date"></slot></small>

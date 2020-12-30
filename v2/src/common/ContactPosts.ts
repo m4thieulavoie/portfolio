@@ -5,18 +5,7 @@ export const contactPosts = [
   {
     text: html`<h3>Like what I'm doing?</h3>
       <p>I love coffee!</p>
-      <a
-        class="bmc-button"
-        target="_blank"
-        href="https://www.buymeacoffee.com/mathieulavoie"
-        rel="noopener noreferrer"
-      >
-        <img
-          src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
-          alt="Buy me a coffee!"
-        />
-        <span>Buy me one!</span>
-      </a>`,
+      <mathieu-coffee-button></mathieu-coffee-button>`,
     date: "2021",
   },
   {
