@@ -42,6 +42,7 @@ export const historyPosts = [
         frameborder="0"
         class="giphy-embed"
         title="Gif 2"
+        aria-label="Gif 2"
         allowfullscreen
       ></iframe>`,
   },
@@ -65,6 +66,7 @@ export const historyPosts = [
         frameborder="0"
         class="giphy-embed"
         title="Gif 3"
+        aria-label="Gif 3"
         allowfullscreen
       ></iframe>`,
   },
@@ -87,6 +89,7 @@ export const historyPosts = [
         frameborder="0"
         class="giphy-embed"
         title="Gif 4"
+        aria-label="Gif 4"
         allowfullscreen
       ></iframe>`,
   },

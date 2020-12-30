@@ -1,4 +1,5 @@
 import styles from "./app.scss";
+import bootstrap, { setAxeConfig } from "axe-browser-reporter";
 
 const styling = document.createElement("style");
 styling.innerText = styles;
@@ -19,3 +20,9 @@ require("./Publications/Publications");
 require("./Skillz/Skillz");
 require("./Terminal/Terminal");
 require("./Window/Window");
+
+setAxeConfig({
+  whitelist: ["color-contrast", "frame-tested"],
+});
+
+bootstrap();

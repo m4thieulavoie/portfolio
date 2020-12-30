@@ -1,12 +1,19 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
+const webpack = require("webpack");
 
-module.exports = () => ({
+module.exports = (env) => ({
   entry: "./src/index.ts",
-  mode: "production",
+  mode: env.NODE_ENV,
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html",
+    }),
+    new webpack.DefinePlugin({
+      "process.env": {
+        NODE_ENV: JSON.stringify(env.NODE_ENV),
+        APP_ENV: JSON.stringify("browser"),
+      },
     }),
   ],
   module: {

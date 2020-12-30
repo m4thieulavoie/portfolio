@@ -20,4 +20,10 @@ const template = html`<div class="header">
   template,
   styles,
 })
-export default class PostComponent extends FASTElement {}
+export default class PostComponent extends FASTElement {
+  connectedCallback() {
+    super.connectedCallback();
+
+    this.setAttribute("role", "listitem");
+  }
+}

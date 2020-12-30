@@ -23,7 +23,7 @@ const template = html`<header>
     <slot name="name"></slot>
     <button>Contact me</button>
   </div>
-  <div class="content">
+  <div class="content" tabindex="0">
     <slot></slot>
   </div>`;
 

@@ -8,9 +8,9 @@ const template = html`<mathieu-window
   <mathieu-avatar></mathieu-avatar>
   <div class="home-content">
     <h1>Welcome to my online resume!</h1>
-    <h4>
+    <h2>
       My name is Mathieu Lavoie, let me walk you through this tiny website
-    </h4>
+    </h2>
     <div class="button-container">
       <button>
         <img src="${rightArrow}" alt="Right arrow" />

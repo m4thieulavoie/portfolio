@@ -13,6 +13,7 @@ export const publications = [
         <img
           src="https://res.cloudinary.com/practicaldev/image/fetch/s--q2LY5Ha3--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/la66t9tv7yv6x0v2lkhe.jpg"
           width="100%"
+          alt="Taking advantage of the quarantine as a developer"
         />
       </a>
       <p class="status">
@@ -25,6 +26,7 @@ export const publications = [
         <a
           target="_blank"
           rel="noreferrer"
+          aria-label="Read Taking advantage of the quarantine as a developer"
           href="https://dev.to/m4thieulavoie/taking-advantage-of-the-quarantine-as-a-developer-5elk"
         >
           more...
@@ -42,6 +44,7 @@ export const publications = [
         <img
           src="https://res.cloudinary.com/practicaldev/image/fetch/s--DtdnbxBe--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/rgzgqyfr5anjo55ucp1z.jpg"
           width="100%"
+          alt="How I managed to use SCSS inside Web Components"
         />
       </a>
       <p class="status">
@@ -61,6 +64,7 @@ export const publications = [
           target="_blank"
           rel="noreferrer"
           href="https://dev.to/m4thieulavoie/how-i-managed-to-use-scss-inside-web-components-3lk9"
+          aria-label="Read How I managed to use SCSS inside Web Components"
         >
           more...
         </a>

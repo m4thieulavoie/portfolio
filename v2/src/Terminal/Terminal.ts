@@ -20,8 +20,11 @@ const template = html<TerminalComponent>`<div class="previous-messages">
     )}
   </div>
   <div class="text-container">
-    <p>visitor-PC: <span class="machine-name">matmobile.co </span> root$</p>
+    <label for="console-input"
+      >visitor-PC: <span class="machine-name">matmobile.co </span> root$</label
+    >
     <input
+      id="console-input"
       class="console-input"
       type="text"
       @keydown=${(x, c) => {

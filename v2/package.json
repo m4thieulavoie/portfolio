@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack serve",
+    "start": "webpack serve -- --env NODE_ENV=development",
     "lint": "eslint --ext .ts, src/ && npx stylelint \"src/**/*.scss\"",
     "clean": "rimraf dist",
     "build": "npm run clean && npm run lint && tsx"
@@ -29,6 +29,7 @@
     "eslint-config-prettier": "7.1.0",
     "eslint-plugin-import": "2.22.1",
     "html-webpack-plugin": "4.5.0",
+    "lodash-es": "^4.17.20",
     "prettier": "2.2.1",
     "rimraf": "3.0.2",
     "sass": "1.30.0",
@@ -45,7 +46,8 @@
   },
   "dependencies": {
     "@microsoft/fast-element": "0.21.1",
-    "@vaadin/router": "1.7.2"
+    "@vaadin/router": "1.7.2",
+    "axe-browser-reporter": "0.0.1"
   },
   "browserslist": {
     "development": [
