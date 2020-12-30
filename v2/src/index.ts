@@ -1,5 +1,5 @@
 import styles from "./app.scss";
-import bootstrap, { setAxeConfig } from "axe-browser-reporter";
+import bootstrap from "axe-browser-reporter";
 
 const styling = document.createElement("style");
 styling.innerText = styles;
@@ -21,8 +21,6 @@ require("./Skillz/Skillz");
 require("./Terminal/Terminal");
 require("./Window/Window");
 
-setAxeConfig({
+bootstrap({
   whitelist: ["color-contrast", "frame-tested"],
 });
-
-bootstrap();
