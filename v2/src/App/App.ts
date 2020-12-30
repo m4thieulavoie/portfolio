@@ -3,7 +3,10 @@ import { Router } from "@vaadin/router";
 import styles from "./App.scss";
 
 const template = html`<mathieu-header></mathieu-header
-  ><mathieu-window><mathieu-console></mathieu-console></mathieu-window>
+  ><mathieu-window
+    ><h2 slot="title">Terminal</h2>
+    <mathieu-terminal></mathieu-terminal
+  ></mathieu-window>
   <main></main>`;
 
 @customElement({
@@ -19,7 +22,12 @@ export default class AppComponent extends FASTElement {
     router.setRoutes([
       { path: "/", component: "mathieu-home" },
       { path: "/about", component: "mathieu-about" },
-      { path: "(.*)", component: "mathieu-not-found" },
+      { path: "/contact", component: "mathieu-contact" },
+      { path: "/history", component: "mathieu-history" },
+      { path: "/skillz", component: "mathieu-skillz" },
+      { path: "/portfolio", component: "mathieu-portfolio" },
+      { path: "/publications", component: "mathieu-publications" },
+      { path: "(.*)", component: "mathieu-home" },
     ]);
   }
 }

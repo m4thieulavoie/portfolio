@@ -15,6 +15,14 @@ const template = html`<header>
 
     <slot name="title"></slot>
   </header>
+  <div>
+    <button>
+      <i className="arrow left"></i>
+      Home
+    </button>
+    <slot name="name"></slot>
+    <button>Contact me</button>
+  </div>
   <div class="content">
     <slot></slot>
   </div>`;

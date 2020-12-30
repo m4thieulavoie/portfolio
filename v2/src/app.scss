@@ -16,17 +16,18 @@
 
 body {
   background-color: var(--neutral-1);
+  background-image: url("https://i.redd.it/m8c20gchf7231.jpg");
+  background-position: center;
+  background-size: cover;
   font-family: var(--font-default);
+  height: 100vh;
   margin: 0;
   padding: 0;
 }
 
-article {
-  background-color: var(--neutral-0);
-  border: 1px solid var(--neutral-10);
-  border-radius: 8px;
-  margin: 0.5rem auto;
-  max-width: 50rem;
-  min-height: 10rem;
-  padding: 0 1rem;
+@media screen and (max-width: 950px) {
+  /* stylelint-disable */
+  #bmc-wbtn {
+    display: none !important;
+  }
 }
