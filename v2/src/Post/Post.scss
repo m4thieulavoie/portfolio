@@ -1,0 +1,68 @@
+:host {
+  background-color: rgba(#fff, 0.7);
+  border: 1px solid #d3d3d3;
+  border-radius: var(--radius-small);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 30px;
+  max-width: 500px;
+  padding: 30px 30px 20px;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+
+    .infos {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+    }
+  }
+
+  footer {
+    margin-top: 10px;
+  }
+
+  @media screen and (max-width: 740px) {
+    padding: 30px 15px 20px;
+  }
+}
+
+.header .infos p {
+  margin: 0;
+}
+
+::slotted(img) {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+
+::slotted(p) {
+  img {
+    max-width: 100%;
+  }
+}
+
+h2,
+::slotted(.status) {
+  font-family: var(--font-title);
+}
+
+::slotted(.status) {
+  font-size: 18px;
+
+  a {
+    color: var(--blue-300);
+
+    &:hover {
+      background-color: var(--blue-300);
+      color: var(--white);
+    }
+  }
+}
+
+::slotted(*) {
+  max-width: 100%;
+}

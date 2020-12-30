@@ -1,0 +1,36 @@
+:root {
+  --radius-none: 0;
+  --radius-small: 8px;
+  --radius-medium: 15px;
+  --radius-large: 50%;
+
+  --font-mono: menlo, consolas, monospace;
+  --font-title: "Lato", sans-serif;
+  --font-default: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+
+  --blue-300: #158beb;
+  --blue-400: #{darken(#158beb, 10%)};
+  --white: #fff;
+}
+
+body {
+  background-color: var(--neutral-1);
+  font-family: var(--font-default);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  .wallpaper {
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  main {
+    height: 100%;
+  }
+}
