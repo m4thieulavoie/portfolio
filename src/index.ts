@@ -8,7 +8,7 @@ document.querySelector("head").append(styling);
 
 require("./About/About");
 require("./App/App");
-require("./avatar/Avatar");
+require("./Avatar/Avatar");
 require("./CoffeeButton/CoffeeButton");
 require("./Contact/Contact");
 require("./Header/Header");
