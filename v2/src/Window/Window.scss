@@ -1,7 +1,7 @@
 :host {
   background-color: rgba(#fff, 0.7);
   border-radius: var(--radius-small);
-  margin: 5px;
+  margin: auto 5px;
   width: 100%;
 
   @media screen and (max-width: 950px) {
@@ -63,6 +63,10 @@
         cursor: pointer;
       }
     }
+  }
+
+  .posts-header {
+    display: flex;
   }
 
   button {
@@ -151,7 +155,7 @@
   color: #222;
   font-family: var(--font-title);
   font-size: 14px;
-  margin: 0.5rem;
+  margin: 0.5rem auto;
   padding: 5px 30px;
   text-align: center;
   width: 50%;
@@ -167,6 +171,7 @@ slot[name="name"] {
   align-items: center;
   background-color: rgba(#333, 0.7);
   display: flex;
+  flex: 1;
   justify-content: center;
   margin: 0;
 
@@ -174,5 +179,28 @@ slot[name="name"] {
     background-color: #fff;
     justify-content: space-between;
     padding: 20px 10px;
+  }
+}
+
+.arrow {
+  border: solid var(--blue-300);
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+
+  &.right {
+    transform: rotate(-45deg);
+  }
+
+  &.left {
+    transform: rotate(135deg);
+  }
+
+  &.up {
+    transform: rotate(-135deg);
+  }
+
+  &.down {
+    transform: rotate(45deg);
   }
 }

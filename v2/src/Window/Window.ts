@@ -15,9 +15,9 @@ const template = html`<header>
 
     <slot name="title"></slot>
   </header>
-  <div>
+  <div class="posts-header">
     <button>
-      <i className="arrow left"></i>
+      <i class="arrow left"></i>
       Home
     </button>
     <slot name="name"></slot>
