@@ -1,10 +1,7 @@
 import { FASTElement, html, repeat } from "@microsoft/fast-element";
 import { SocialPost } from "./SocialPost";
 
-export const navigateToPage = (e: MouseEvent | undefined, page: string) => {
-  if (e?.preventDefault) {
-    e.preventDefault();
-  }
+export const navigateToPage = (page: string) => {
   window.location.href = page;
   window.scrollTo(0, 0);
 };

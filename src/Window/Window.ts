@@ -17,12 +17,12 @@ const template = html`<header>
     <slot name="title"></slot>
   </header>
   <div class="posts-header" tabindex="0">
-    <button tabindex="0" @click=${() => navigateToPage(undefined, "/")}>
+    <button tabindex="0" @click=${() => navigateToPage("/")}>
       <i class="arrow left"></i>
       Home
     </button>
     <slot name="name"></slot>
-    <button tabindex="0" @click=${() => navigateToPage(undefined, "contact")}>
+    <button tabindex="0" @click=${() => navigateToPage("contact")}>
       Contact me
     </button>
   </div>

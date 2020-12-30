@@ -54,8 +54,7 @@ export default class TerminalComponent extends FASTElement {
         () => menu,
         html`<li
           class="command"
-          @click=${(x) =>
-            navigateToPage(undefined, x.name === "home" ? "/" : x.name)}
+          @click=${(x) => navigateToPage(x.name === "home" ? "/" : x.name)}
         >
           ${(menuItem) => menuItem.name}
         </li>`
@@ -85,7 +84,7 @@ export default class TerminalComponent extends FASTElement {
     const command = input.value;
 
     if (menu.find(({ name }) => name === command)) {
-      navigateToPage(undefined, `/${command}`);
+      navigateToPage(`/${command}`);
     }
 
     if (command === "clear") {

@@ -8,7 +8,7 @@ const firstLetterUppercase = (word: string) =>
 
 const template = html<HeaderComponent>`
   <ul tabindex="0"></ul>
-  <div class="main-avatar" @click=${(e: any) => navigateToPage(e, "/contact")}>
+  <div class="main-avatar" @click=${() => navigateToPage("/contact")}>
     <mathieu-avatar size="1"></mathieu-avatar>
     <span class="name">Mathieu Lavoie</span>
     <span class="role"> - Tech Lead</span>
@@ -30,7 +30,7 @@ export default class HeaderComponent extends FASTElement {
       listItem.setAttribute("tabindex", "0");
       const computedName = name === "home" ? "/" : name;
       const pageUrl = i === 0 ? "/" : computedName;
-      listItem.onclick = (e) => navigateToPage(e, pageUrl);
+      listItem.onclick = () => navigateToPage(pageUrl);
       listItem.innerHTML = `${firstLetterUppercase(name)} ${
         i === 0 ? emoji : `<span class="emoji">${emoji}</span>`
       }`;

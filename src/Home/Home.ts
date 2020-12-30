@@ -12,7 +12,7 @@ const template = html`<mathieu-window
     <h2>
       My name is Mathieu Lavoie, let me walk you through this tiny website
     </h2>
-    <div class="button-container">
+    <div class="button-container" @click=${() => navigateToPage("/about")}>
       <button>
         <img src="${rightArrow}" alt="Right arrow" />
       </button>
@@ -26,13 +26,4 @@ const template = html`<mathieu-window
   template,
   styles,
 })
-export default class HomeComponent extends FASTElement {
-  connectedCallback() {
-    super.connectedCallback();
-
-    const container = this.shadowRoot.querySelector<HTMLButtonElement>(
-      ".button-container"
-    );
-    container.onclick = (e) => navigateToPage(e, "/about");
-  }
-}
+export default class HomeComponent extends FASTElement {}
