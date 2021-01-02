@@ -43,7 +43,7 @@ module.exports = (env) => ({
   devServer: {
     port: 3000,
     historyApiFallback: {
-      index: "index.html",
+      index: "/",
     },
   },
 });

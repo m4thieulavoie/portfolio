@@ -4,8 +4,23 @@ import { SocialPost } from "./SocialPost";
 export const contactPosts = [
   {
     text: html`<h3>Like what I'm doing?</h3>
-      <p>I love coffee!</p>
-      <mathieu-coffee-button></mathieu-coffee-button>`,
+      <p
+        style="margin: 0.25rem 0;display: flex; align-items: center;gap: 0.5rem;"
+      >
+        I love coffee! <mathieu-coffee-button></mathieu-coffee-button>
+      </p>
+      <p
+        style="margin: 0.25rem 0;display: flex; align-items: center;gap: 0.5rem;"
+      >
+        Or sponsor me!
+        <iframe
+          src="https://github.com/sponsors/m4thieulavoie/button"
+          title="Sponsor m4thieulavoie"
+          height="35"
+          width="116"
+          style="border: 0;"
+        ></iframe>
+      </p>`,
     date: "2021",
   },
   {
