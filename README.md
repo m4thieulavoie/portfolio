@@ -3,6 +3,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/55407d98-d92e-4bfd-881a-9f5ef1a9f503/deploy-status)](https://app.netlify.com/sites/gallant-goodall-8c025a/deploys)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com/)
+[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=shield)](https://circleci.com/gh/m4thieulavoie/portfolio)
 
 # Welcome to my online portfolio!
 
