@@ -7,7 +7,7 @@
 
 # Welcome to my online portfolio!
 
-Hi! My name is Mathieu Lavoie and this is the repo of my online portfolio. ☕️
+Hi! My name is Mathieu Lavoie and this is the repo of my online portfolio.
 
 ## Available Scripts
 
