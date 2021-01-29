@@ -49,7 +49,7 @@
   },
   "dependencies": {
     "@microsoft/fast-element": "0.21.1",
-    "@vaadin/router": "1.7.2",
+    "@vaadin/router": "1.7.3",
     "axe-browser-reporter": "0.0.4"
   },
   "browserslist": {
