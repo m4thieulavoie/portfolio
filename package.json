@@ -48,7 +48,7 @@
     "webpack-dev-server": "3.11.2"
   },
   "dependencies": {
-    "@microsoft/fast-element": "0.22.0",
+    "@microsoft/fast-element": "0.22.2",
     "@vaadin/router": "1.7.3",
     "axe-browser-reporter": "0.0.4"
   },
