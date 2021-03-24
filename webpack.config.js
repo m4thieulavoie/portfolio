@@ -25,7 +25,12 @@ module.exports = (env) => ({
       },
       {
         test: /\.scss$/i,
-        use: ["sass-to-string", "sass-loader"],
+        use: [
+          "sass-to-string",
+          {
+            loader: "sass-loader",
+          },
+        ],
       },
       {
         test: /\.(woff2?|jpe?g|png|gif|ico)$/,

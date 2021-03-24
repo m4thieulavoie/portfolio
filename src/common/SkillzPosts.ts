@@ -6,9 +6,12 @@ export const skillzPosts = [
     date: "November 2018 - undefined",
     text: html`<h2>Front-end skills</h2>
       <div class="status">
-        For the past 10+ years, I've sharpened my front-end skills with
-        different strategies. Lately, I've been exposed to a <i>lot</i> of
-        JavaScript, SASS, HTML, React and Web Components
+        <p>
+          For the past 10+ years, I've sharpened my front-end skills with
+          different technologies. Lately, I've been exposed to a <i>lot</i> of
+          JavaScript, SASS, HTML, React and Web Components. I also know about
+          Web Accessibility.
+        </p>
       </div>`,
   },
   {
@@ -25,15 +28,15 @@ export const skillzPosts = [
           <tbody>
             <tr>
               <td>Great communicator</td>
-              <td>I like Comic Sans MS</td>
+              <td>I overuse emojis 😬</td>
             </tr>
             <tr>
               <td>I love teamwork</td>
-              <td>I loved PHP for way longer than I'd like to admit.</td>
+              <td></td>
             </tr>
             <tr>
               <td>Hard worker</td>
-              <td>I overuse emojis</td>
+              <td></td>
             </tr>
             <tr>
               <td>UI details matter to me</td>

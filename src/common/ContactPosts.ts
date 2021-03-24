@@ -24,16 +24,12 @@ export const contactPosts = [
     date: "2021",
   },
   {
-    text: html`<p class="status">
-      ✉️
-      <a href="mailto:mathieulavoie94@gmail.com">mathieulavoie94@gmail.com</a>
-    </p>`,
     date: "2021",
-  },
-  {
-    date: "2015 - now",
     text: html`<div class="status">
       <ul>
+        <li>
+          <a href="mailto:mathieulavoie94@gmail.com">Email ✉️</a>
+        </li>
         <li>
           <a href="https://codepen.io/matmobile">Codepen</a>
         </li>
