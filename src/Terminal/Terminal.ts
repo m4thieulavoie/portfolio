@@ -7,6 +7,7 @@ import {
   ViewTemplate,
 } from "@microsoft/fast-element";
 import { menu } from "../common/menu";
+import { fullName } from "../common/metadata";
 import { navigateToPage } from "../common/utils";
 import styles from "./Terminal.scss";
 
@@ -63,7 +64,7 @@ export default class TerminalComponent extends FASTElement {
   `;
 
   private initialCommands = [
-    html`<span> Hi, I'm Mathieu Lavoie 👋 </span>`,
+    html`<span> Hi, I'm ${fullName} 👋 </span>`,
     html`I'm a Senior Software developer`,
   ];
 
@@ -89,6 +90,14 @@ export default class TerminalComponent extends FASTElement {
 
     if (command === "clear") {
       this.commands = [];
+    } else if (command === "cv") {
+      const printWindow = window.open(
+        `${window.location.origin}/cv`,
+        "",
+        "height=1125,width=800"
+      );
+      printWindow.document.close();
+      printWindow.print();
     } else {
       this.commands = [
         ...this.commands,

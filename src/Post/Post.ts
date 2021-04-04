@@ -1,10 +1,11 @@
 import { FASTElement, customElement, html } from "@microsoft/fast-element";
+import { fullName } from "../common/metadata";
 import styles from "./Post.scss";
 
 const template = html`<div class="header">
     <mathieu-avatar size="4"></mathieu-avatar>
     <div class="infos">
-      <strong>Mathieu Lavoie</strong>
+      <strong>${fullName}</strong>
       <p>@m4thieulavoie</p>
     </div>
   </div>

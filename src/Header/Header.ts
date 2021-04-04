@@ -1,5 +1,6 @@
 import { FASTElement, customElement, html } from "@microsoft/fast-element";
 import { menu } from "../common/menu";
+import { fullName } from "../common/metadata";
 import { navigateToPage } from "../common/utils";
 import styles from "./Header.scss";
 
@@ -10,7 +11,7 @@ const template = html<HeaderComponent>`
   <ul tabindex="0"></ul>
   <div class="main-avatar" @click=${() => navigateToPage("/contact")}>
     <mathieu-avatar size="1"></mathieu-avatar>
-    <span class="name">Mathieu Lavoie</span>
+    <span class="name">${fullName}</span>
     <span class="role"> - Tech Lead</span>
   </div>
 `;

@@ -11,6 +11,7 @@ require("./App/App");
 require("./Avatar/Avatar");
 require("./CoffeeButton/CoffeeButton");
 require("./Contact/Contact");
+require("./CV/CV");
 require("./Header/Header");
 require("./History/History");
 require("./Home/Home");

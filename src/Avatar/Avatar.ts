@@ -6,11 +6,12 @@ import {
 } from "@microsoft/fast-element";
 import styles from "./Avatar.scss";
 import me from "../../images/me.png";
+import { fullName } from "../common/metadata";
 
 const template = html<AvatarComponent>`<img
   src="${(x) => x.url}"
   style="width: ${(x) => x.size}rem;height: ${(x) => x.size}rem"
-  alt="Mathieu Lavoie - Tech Lead @ LogMeIn"
+  alt="${fullName} - Tech Lead @ LogMeIn"
 />`;
 
 @customElement({

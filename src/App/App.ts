@@ -24,6 +24,7 @@ export default class AppComponent extends FASTElement {
     router.setRoutes([
       { path: "/", component: "mathieu-home" },
       { path: "/about", component: "mathieu-about" },
+      { path: "/cv", component: "mathieu-cv" },
       { path: "/contact", component: "mathieu-contact" },
       { path: "/history", component: "mathieu-history" },
       { path: "/skillz", component: "mathieu-skillz" },
