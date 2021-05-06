@@ -22,6 +22,10 @@
     grid-template-columns: 33% 34% 33%;
   }
 
+  p {
+    margin: 0;
+  }
+
   header {
     display: flex;
     justify-content: space-between;
@@ -46,14 +50,14 @@
     font-weight: 500;
   }
 
-  p {
-    margin: 0;
-  }
-
   .jobs {
     list-style: none;
     padding: 0;
   }
+}
+
+ul {
+  margin: 0;
 }
 
 .job-header {
@@ -87,8 +91,4 @@
   div {
     flex-grow: 1;
   }
-}
-
-ul {
-  margin: 0;
 }

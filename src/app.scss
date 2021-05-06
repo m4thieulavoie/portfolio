@@ -3,17 +3,13 @@
   --radius-small: 8px;
   --radius-medium: 15px;
   --radius-large: 50%;
-
   --font-mono: menlo, consolas, monospace;
   --font-title: "Lato", sans-serif;
-  --font-default: -apple-system, BlinkMacSystemFont, avenir next, avenir,
-    helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-
+  --font-default: -apple-system, blinkmacsystemfont, avenir next, avenir,
+    helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
   --blue-300: #158beb;
   --blue-400: #{darken(#158beb, 10%)};
-
   --outline-color: #158beb;
-
   --white: #fff;
 }
 
