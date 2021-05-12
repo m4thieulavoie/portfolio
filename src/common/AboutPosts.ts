@@ -1,5 +1,5 @@
 import { html } from "@microsoft/fast-element";
-import { SocialPost } from "./SocialPost";
+import type { SocialPost } from "./SocialPost";
 import cats from "../../images/cats.jpg";
 
 export const aboutPosts = [
@@ -71,4 +71,4 @@ export const aboutPosts = [
         alt="Yes, I like snowmobiling"
       />`,
   },
-] as SocialPost[];
+] as readonly SocialPost[];

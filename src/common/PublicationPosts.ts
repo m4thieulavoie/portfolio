@@ -1,5 +1,5 @@
 import { html } from "@microsoft/fast-element";
-import { SocialPost } from "./SocialPost";
+import type { SocialPost } from "./SocialPost";
 
 export const publications = [
   {
@@ -70,4 +70,4 @@ export const publications = [
         </a>
       </p>`,
   },
-] as SocialPost[];
+] as readonly SocialPost[];

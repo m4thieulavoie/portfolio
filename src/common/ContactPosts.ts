@@ -1,7 +1,7 @@
 import { html } from "@microsoft/fast-element";
-import { SocialPost } from "./SocialPost";
+import type { SocialPost } from "./SocialPost";
 
-export const contactPosts = [
+export const contactPosts: ReadonlyArray<SocialPost> = [
   {
     text: html`<h3>Like what I'm doing?</h3>
       <p
@@ -50,4 +50,4 @@ export const contactPosts = [
       </ul>
     </div>`,
   },
-] as SocialPost[];
+];

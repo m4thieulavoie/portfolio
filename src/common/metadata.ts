@@ -22,14 +22,14 @@ export type Skill =
   | "Web Components";
 
 export interface JobHistory {
-  title: string;
-  company: string;
-  skills: Skill[];
-  dates: string;
-  tasks: string[];
+  readonly title: string;
+  readonly company: string;
+  readonly skills: readonly Skill[];
+  readonly dates: string;
+  readonly tasks: readonly string[];
 }
 
-export const jobHistory: JobHistory[] = [
+export const jobHistory: readonly JobHistory[] = [
   {
     company: "LogMeIn",
     skills: [

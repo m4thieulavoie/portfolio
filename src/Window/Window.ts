@@ -43,9 +43,8 @@ export default class WindowComponent extends FASTElement {
   connectedCallback() {
     super.connectedCallback();
 
-    const fullScreenButton = this.shadowRoot.querySelector<HTMLLIElement>(
-      ".button-green"
-    );
+    const fullScreenButton =
+      this.shadowRoot.querySelector<HTMLLIElement>(".button-green");
     fullScreenButton.onclick = () => {
       const { innerWidth } = window;
       if (innerWidth > 550) {

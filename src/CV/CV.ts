@@ -4,20 +4,19 @@ import {
   html,
   repeat,
 } from "@microsoft/fast-element";
+import type { Skill, JobHistory } from "../common/metadata";
 import {
   fullName,
   roleName,
   careerOverview,
-  Skill,
   email,
   website,
   jobHistory,
-  JobHistory,
   phoneNumer,
 } from "../common/metadata";
 import styles from "./CV.scss";
 
-const skillz: Skill[] = [
+const skillz: readonly Skill[] = [
   "HTML",
   "CSS/SASS",
   "Git",

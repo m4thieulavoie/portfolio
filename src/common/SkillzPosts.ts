@@ -1,5 +1,5 @@
 import { html } from "@microsoft/fast-element";
-import { SocialPost } from "./SocialPost";
+import type { SocialPost } from "./SocialPost";
 
 export const skillzPosts = [
   {
@@ -62,4 +62,4 @@ export const skillzPosts = [
       </ul>
     </div>`,
   },
-] as SocialPost[];
+] as readonly SocialPost[];
