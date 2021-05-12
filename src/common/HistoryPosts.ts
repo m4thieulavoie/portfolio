@@ -1,7 +1,7 @@
 import { html } from "@microsoft/fast-element";
-import { SocialPost } from "./SocialPost";
+import type { SocialPost } from "./SocialPost";
 
-export const historyPosts = [
+export const historyPosts: ReadonlyArray<SocialPost> = [
   {
     date: "November 2018 - undefined",
     text: html`<p class="status">
@@ -93,4 +93,4 @@ export const historyPosts = [
         allowfullscreen
       ></iframe>`,
   },
-] as SocialPost[];
+];

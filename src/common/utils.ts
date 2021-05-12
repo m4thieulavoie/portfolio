@@ -1,5 +1,6 @@
-import { FASTElement, html, repeat } from "@microsoft/fast-element";
-import { SocialPost } from "./SocialPost";
+import type { FASTElement } from "@microsoft/fast-element";
+import { html, repeat } from "@microsoft/fast-element";
+import type { SocialPost } from "./SocialPost";
 
 export const navigateToPage = (page: string) => {
   window.location.href = page;
@@ -8,7 +9,8 @@ export const navigateToPage = (page: string) => {
 
 export const generatePostsPageTemplate = <T extends FASTElement>(
   name: string,
-  posts: SocialPost[]
+  // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
+  posts: readonly SocialPost[]
 ) => html`<mathieu-window
   ><h2 slot="title">Browser - ${name}</h2>
   <h2 slot="name">${name}</h2>

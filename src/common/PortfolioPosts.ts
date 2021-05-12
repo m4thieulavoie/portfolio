@@ -1,10 +1,10 @@
 import { html } from "@microsoft/fast-element";
-import { SocialPost } from "./SocialPost";
+import type { SocialPost } from "./SocialPost";
 import mca from "../../images/mca.png";
 import yvanthibault from "../../images/yvanthibault.png";
 import plabonte from "../../images/plabonte.png";
 
-export const protfolioPosts: SocialPost[] = [
+export const protfolioPosts: readonly SocialPost[] = [
   {
     date: "December 2020",
     text: html`<h2>webcomponents-starter</h2>

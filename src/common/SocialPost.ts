@@ -1,6 +1,6 @@
-import { ViewTemplate } from "@microsoft/fast-element";
+import type { ViewTemplate } from "@microsoft/fast-element";
 
 export interface SocialPost {
-  text: ViewTemplate;
-  date: string;
+  readonly text: Readonly<ViewTemplate>;
+  readonly date: string;
 }

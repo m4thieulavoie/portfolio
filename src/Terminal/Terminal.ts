@@ -1,10 +1,10 @@
+import type { ViewTemplate } from "@microsoft/fast-element";
 import {
   FASTElement,
   customElement,
   html,
   attr,
   repeat,
-  ViewTemplate,
 } from "@microsoft/fast-element";
 import { menu } from "../common/menu";
 import { fullName } from "../common/metadata";
@@ -45,9 +45,9 @@ const template = html<TerminalComponent>`<div class="previous-messages">
   styles,
 })
 export default class TerminalComponent extends FASTElement {
-  menuItems = menu;
+  readonly menuItems = menu;
 
-  private helpCommand = html`
+  private readonly helpCommand = html`
     help
     <p>Valid commands are</p>
     <ul class="commands-menu">
@@ -63,12 +63,12 @@ export default class TerminalComponent extends FASTElement {
     </ul>
   `;
 
-  private initialCommands = [
+  private readonly initialCommands = [
     html`<span> Hi, I'm ${fullName} 👋 </span>`,
     html`I'm a Senior Software developer`,
   ];
 
-  @attr commands: ViewTemplate[] = [];
+  @attr commands: readonly ViewTemplate[] = [];
 
   private spiceCommand(command: string) {
     if (command.startsWith("sudo")) {
