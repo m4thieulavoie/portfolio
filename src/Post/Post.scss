@@ -50,6 +50,10 @@ h2,
   font-family: var(--font-title);
 }
 
+::slotted(.contributions) {
+  --post-list-padding: 0 0 0 2rem;
+}
+
 ::slotted(.status) {
   font-size: 18px;
 

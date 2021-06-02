@@ -6,6 +6,49 @@ import plabonte from "../../images/plabonte.png";
 
 export const protfolioPosts: readonly SocialPost[] = [
   {
+    date: "2021",
+    text: html`<h2>Open source contributions</h2>
+      <ul class="contributions">
+        <li>
+          <a
+            href="https://github.com/microsoft/fast"
+            target="blank"
+            rel="noopener noreferrer"
+            >@microsoft/fast</a
+          >
+          - Made it to the top 20 contributors
+        </li>
+        <li>
+          <a
+            href="https://github.com/mdn/translated-content"
+            target="blank"
+            rel="noopener noreferrer"
+            >mdn/translated-content</a
+          >
+          - French typo fix contribution
+        </li>
+        <li>
+          <a
+            href="https://github.com/dequelabs/react-axe"
+            target="blank"
+            rel="noopener noreferrer"
+            >react-axe</a
+          >
+          - Project build config
+        </li>
+        <li>
+          <a
+            href="https://github.com/m4thieulavoie/sass-to-string"
+            target="blank"
+            rel="noopener noreferrer"
+            >sass-to-string</a
+          >
+          - Repository owner
+        </li>
+        <li>... trying to add more 😅</li>
+      </ul>`,
+  },
+  {
     date: "December 2020",
     text: html`<h2>webcomponents-starter</h2>
       <p class="status">

@@ -3,6 +3,22 @@ import type { SocialPost } from "./SocialPost";
 
 export const publications = [
   {
+    date: "21/05/2021",
+    text: html`<h2>
+        How adding an agile coach to our team accelerated our work
+      </h2>
+      <p class="status">
+        <i>Posted in the internal engineering blog of LogMeIn</i>
+      </p>`,
+  },
+  {
+    date: "24/09/2020",
+    text: html`<h2>Get started with [design system name] design tokens</h2>
+      <p class="status">
+        <i>Posted in the internal engineering blog of LogMeIn</i>
+      </p>`,
+  },
+  {
     date: "24/08/2020",
     text: html`<h2>Taking advantage of the quarantine as a developer</h2>
       <a
