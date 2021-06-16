@@ -1,6 +1,6 @@
 import { html } from "@microsoft/fast-element";
-import type { SocialPost } from "./SocialPost";
 import cats from "../../images/cats.jpg";
+import type { SocialPost } from "./SocialPost";
 
 export const aboutPosts = [
   {

@@ -1,8 +1,8 @@
 import { html } from "@microsoft/fast-element";
-import type { SocialPost } from "./SocialPost";
 import mca from "../../images/mca.png";
 import yvanthibault from "../../images/yvanthibault.png";
 import plabonte from "../../images/plabonte.png";
+import type { SocialPost } from "./SocialPost";
 
 export const protfolioPosts: readonly SocialPost[] = [
   {

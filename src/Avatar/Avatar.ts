@@ -4,9 +4,9 @@ import {
   html,
   attr,
 } from "@microsoft/fast-element";
-import styles from "./Avatar.scss";
 import me from "../../images/me.png";
 import { fullName } from "../common/metadata";
+import styles from "./Avatar.scss";
 
 const template = html<AvatarComponent>`<img
   src="${(x) => x.url}"
