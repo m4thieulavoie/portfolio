@@ -23,6 +23,5 @@ require("./Terminal/Terminal");
 require("./Window/Window");
 
 bootstrap({
-  // eslint-disable-next-line inclusive-language/use-inclusive-words
-  whitelist: ["color-contrast", "frame-tested"],
+  allowlist: ["color-contrast", "frame-tested"],
 });
