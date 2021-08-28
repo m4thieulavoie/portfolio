@@ -11,7 +11,7 @@ import styles from "./Avatar.scss";
 const template = html<AvatarComponent>`<img
   src="${(x) => x.url}"
   style="width: ${(x) => x.size}rem;height: ${(x) => x.size}rem"
-  alt="${fullName} - Tech Lead @ LogMeIn"
+  alt="${fullName} - Senior Developer @ Shopify"
 />`;
 
 @customElement({

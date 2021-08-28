@@ -1,5 +1,5 @@
 export const fullName = "Mathieu Lavoie";
-export const roleName = "Tech Lead";
+export const roleName = "Senior Developer";
 export const address = "96, Rue de la Gare, Saint-Anaclet, Qc";
 export const phoneNumer = "(418) 509-4850";
 export const email = "mathieulavoie94@gmail.com";
@@ -31,6 +31,13 @@ export interface JobHistory {
 
 export const jobHistory: readonly JobHistory[] = [
   {
+    company: "Shopify",
+    skills: ["CSS/SASS", "Git", "HTML", "JavaScript", "React", "TypeScript"],
+    title: "Senior Developer",
+    dates: "August 2021 - Today",
+    tasks: ["Help develop the Shipping module of the Shopify platform"],
+  },
+  {
     company: "LogMeIn",
     skills: [
       "CSS/SASS",
@@ -42,7 +49,7 @@ export const jobHistory: readonly JobHistory[] = [
       "Web Components",
     ],
     title: "Tech Lead, Design Systems",
-    dates: "April 2020 - Today",
+    dates: "April 2020 - August 2021",
     tasks: [
       "Helped the company settle down on one technology strategy for its design system",
       "Work in HTML, CSS, TypeScript, React and Web Components in order to ship high quality and accessible components",

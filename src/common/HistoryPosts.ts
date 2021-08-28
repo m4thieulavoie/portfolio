@@ -3,7 +3,25 @@ import type { SocialPost } from "./SocialPost";
 
 export const historyPosts: ReadonlyArray<SocialPost> = [
   {
-    date: "November 2018 - undefined",
+    date: "August 2021 - undefined",
+    text: html`<p class="status">
+        Started working
+        <a
+          href="https://www.shopify.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @Shopify
+        </a>
+        as a Senior Software Developer.
+      </p>
+      <p class="status">
+        Joined the Shipping team and working as a Senior Developer and doing
+        mostly React, HTML, CSS and TypeScript.
+      </p>`,
+  },
+  {
+    date: "November 2018 - August 2021",
     text: html`<p class="status">
         Started working
         <a

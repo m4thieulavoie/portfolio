@@ -28,13 +28,18 @@ export const aboutPosts = [
         favourite thing, and I got to collaborate a lot with designers.
       </p>
       <p>
-        Since the second half of 2020, I work as a Tech Lead for LogMeIn's
-        design system. I get to interact with pretty much every front-end team
-        in the company, work closely with designers and deal with priorities. Of
-        course, I still get to spend a lot of time in VSCode, where I work
-        mostly in TypeScript, SASS, CSS, WebComponents and a bit of React. On
-        top of that, I learned and got expertise around design system with
-        subjects like design tokens and accessibility.
+        Between the second half of 2020 and August 2021, I work as a Tech Lead
+        for LogMeIn's design system. I got to interact with pretty much every
+        front-end team in the company, work closely with designers and deal with
+        priorities. Of course, I still got to spend a lot of time in VSCode,
+        where I worked mostly in TypeScript, SASS, CSS, WebComponents and a bit
+        of React. On top of that, I learned and got expertise around design
+        system with subjects like design tokens and accessibility.
+      </p>
+      <p>
+        More recently, I joined the amazing team at Shopify. I'll be working
+        with the Shipping team as a Senior Developer and doing mostly React,
+        HTML, CSS and TypeScript.
       </p>
     </div>`,
   },

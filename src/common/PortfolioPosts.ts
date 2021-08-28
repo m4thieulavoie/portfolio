@@ -16,7 +16,16 @@ export const protfolioPosts: readonly SocialPost[] = [
             rel="noopener noreferrer"
             >@microsoft/fast</a
           >
-          - Made it to the top 20 contributors
+          - Made it to the top 20 contributors at some point
+        </li>
+        <li>
+          <a
+            href="https://github.com/brave/brave-core"
+            target="blank"
+            rel="noopener noreferrer"
+            >Brave</a
+          >
+          - Couple of UI tweaks
         </li>
         <li>
           <a
@@ -25,7 +34,7 @@ export const protfolioPosts: readonly SocialPost[] = [
             rel="noopener noreferrer"
             >mdn/translated-content</a
           >
-          - French typo fix contribution
+          - French typo fix contributions
         </li>
         <li>
           <a
