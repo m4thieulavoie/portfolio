@@ -1,4 +1,5 @@
 import bootstrap from "axe-browser-reporter";
+import bg from "../images/bg.jpg";
 import styles from "./app.scss";
 
 const styling = document.createElement("style");
@@ -25,3 +26,5 @@ require("./Window/Window");
 bootstrap({
   allowlist: ["color-contrast", "frame-tested"],
 });
+
+document.querySelector<HTMLImageElement>(".wallpaper").src = bg;
