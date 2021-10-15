@@ -28,7 +28,7 @@ export const aboutPosts = [
         favourite thing, and I got to collaborate a lot with designers.
       </p>
       <p>
-        Between the second half of 2020 and August 2021, I work as a Tech Lead
+        Between the second half of 2020 and August 2021, I worked as a Tech Lead
         for LogMeIn's design system. I got to interact with pretty much every
         front-end team in the company, work closely with designers and deal with
         priorities. Of course, I still got to spend a lot of time in VSCode,
