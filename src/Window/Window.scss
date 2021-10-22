@@ -1,5 +1,5 @@
 :host {
-  background-color: rgba(#fff, 0.7);
+  background-color: rgba(#fff / 0.7);
   border-radius: var(--radius-small);
   margin: auto 5px;
   width: 100%;
@@ -16,7 +16,7 @@
 
   header {
     align-items: center;
-    background-color: rgba(#111, 0.7);
+    background-color: rgba(#111 / 0.7);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     display: flex;
@@ -116,7 +116,7 @@
     }
 
     .content {
-      background-color: rgba(#eee, 0.8);
+      background-color: rgba(#eee / 0.8);
       max-height: none;
       min-height: calc(100vh - 100px);
       padding-bottom: 100px;
@@ -141,7 +141,7 @@
 }
 
 :host([expanded="true"]) {
-  background-color: rgba(#fff, 0.85);
+  background-color: rgba(#fff / 0.85);
   height: calc(100vh - 25px);
   left: 0;
   max-width: 100%;
@@ -164,7 +164,7 @@
 }
 
 ::slotted([slot="name"]) {
-  background-color: rgba(#fff, 0.5);
+  background-color: rgba(#fff / 0.5);
   border-radius: var(--radius-small);
   color: #222;
   font-family: var(--font-title);
@@ -183,7 +183,7 @@
 
 slot[name="name"] {
   align-items: center;
-  background-color: rgba(#333, 0.7);
+  background-color: rgba(#333 / 0.7);
   display: flex;
   flex: 1;
   justify-content: center;

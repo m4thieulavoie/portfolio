@@ -3,11 +3,11 @@
   background-color: var(--blue-300);
   border: 1px solid transparent;
   border-radius: var(--radius-small);
-  box-shadow: 0 1px 2px rgba(190, 190, 190, 0.5);
+  box-shadow: 0 1px 2px rgba(190 190 190 / 0.5);
   box-sizing: border-box;
   color: var(--white);
   display: inline-flex;
-  font-family: "Lato", sans-serif;
+  font-family: Lato, sans-serif;
   font-size: 20px;
   height: 40px;
   letter-spacing: -0.08px;
@@ -32,7 +32,7 @@
   &:hover,
   &:active,
   &:focus {
-    box-shadow: 0 1px 2px 2px rgba(190, 190, 190, 0.5);
+    box-shadow: 0 1px 2px 2px rgba(190 190 190 / 0.5);
     color: var(--white);
     opacity: 0.85;
     text-decoration: none;
