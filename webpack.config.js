@@ -1,5 +1,5 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const webpack = require("webpack");
 
 module.exports = (env) => ({
@@ -25,12 +25,7 @@ module.exports = (env) => ({
       },
       {
         test: /\.scss$/i,
-        use: [
-          "sass-to-string",
-          {
-            loader: "sass-loader",
-          },
-        ],
+        use: ["sass-to-string", "sass-loader"],
       },
       {
         test: /\.(woff2?|jpe?g|png|gif|ico)$/,
