@@ -1,9 +1,10 @@
 import type { FASTElement } from "@microsoft/fast-element";
 import { html, repeat } from "@microsoft/fast-element";
+import { Router } from "@vaadin/router";
 import type { SocialPost } from "./SocialPost";
 
 export const navigateToPage = (page: string) => {
-  window.location.href = page;
+  Router.go(page);
   window.scrollTo(0, 0);
 };
 

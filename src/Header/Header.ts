@@ -26,15 +26,14 @@ export default class HeaderComponent extends FASTElement {
     super.connectedCallback();
 
     const list = this.shadowRoot.querySelector("ul");
-    [{ name: "Reset", emoji: "🔄" }, ...menu].forEach(({ emoji, name }, i) => {
+    menu.forEach(({ emoji, name }) => {
       const listItem = document.createElement("li");
       listItem.setAttribute("tabindex", "0");
       const computedName = name === "home" ? "/" : name;
-      const pageUrl = i === 0 ? "/" : computedName;
-      listItem.onclick = () => navigateToPage(pageUrl);
-      listItem.innerHTML = `${firstLetterUppercase(name)} ${
-        i === 0 ? emoji : `<span class="emoji">${emoji}</span>`
-      }`;
+      listItem.onclick = () => navigateToPage(computedName);
+      listItem.innerHTML = `${firstLetterUppercase(
+        name
+      )} <span class="emoji">${emoji}</span>`;
       list.append(listItem);
     });
   }

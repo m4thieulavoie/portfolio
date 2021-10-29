@@ -1,5 +1,10 @@
 :host {
-  background-color: rgba(240 240 240 / 0.8);
+  @media screen and (min-width: 741px) {
+    background-color: rgba(0 0 0 / 0.2);
+    color: #fff;
+    font-size: 14px;
+  }
+
   height: 25px;
   left: 0;
   position: fixed;
@@ -56,14 +61,12 @@
         line-height: 25px;
       }
 
-      &:hover,
-      &.active {
-        background-color: var(--blue-300);
-        color: var(--white);
+      &:hover {
+        background-color: rgba(240 240 240 / 0.2);
       }
 
       &:active {
-        background-color: var(--blue-400);
+        background-color: rgba(240 240 240 / 0.4);
       }
     }
   }
@@ -101,8 +104,7 @@
       }
     }
 
-    .main-avatar,
-    ul li:first-child {
+    .main-avatar {
       display: none !important;
     }
   }
