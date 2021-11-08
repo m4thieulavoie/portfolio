@@ -131,8 +131,11 @@
     }
 
     &:hover {
-      background-color: var(--blue-300);
-      color: var(--white);
+      background-color: rgba(240 240 240 / 0.2);
+    }
+
+    &:active {
+      background-color: rgba(240 240 240 / 0.4);
     }
   }
 

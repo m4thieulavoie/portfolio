@@ -4,13 +4,13 @@ import {
   html,
   attr,
 } from "@microsoft/fast-element";
-import me from "../../images/me.png";
+import me from "../../images/me.jpg";
 import { fullName } from "../common/metadata";
 import styles from "./Avatar.scss";
 
-const template = html<AvatarComponent>`<img
-  src="${(x) => x.url}"
-  style="width: ${(x) => x.size}rem;height: ${(x) => x.size}rem"
+const template = html<AvatarComponent>`<div
+  style="width: ${(x) => x.size}rem;height: ${(x) =>
+    x.size}rem; background-image: url(${(x) => x.url});"
   alt="${fullName} - Senior Developer @ Shopify"
 />`;
 

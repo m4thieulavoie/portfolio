@@ -72,7 +72,7 @@ export const aboutPosts = [
         gear every year.
       </p>
       <img
-        src="https://motoneiges.ca/images/downloaded2018/20200313042712284.jpg"
+        src="https://scontent.fymq1-2.fna.fbcdn.net/v/t1.6435-9/248349451_10222723511091124_7781639740916877266_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=dbeb18&_nc_ohc=9vUmap4h59oAX-7VdvR&_nc_oc=AQkCm3nSxOe9tcSvnJ-HORHPd03q8td0g-kzzQ-y1KIwiFyvCpZiyRiucJplpbzlPOE&_nc_ht=scontent.fymq1-2.fna&oh=79b4257c4695011d2a3e330ebe985766&oe=61AFCAC2"
         alt="Yes, I like snowmobiling"
       />`,
   },

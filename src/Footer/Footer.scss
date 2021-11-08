@@ -1,0 +1,32 @@
+fieldset {
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255 255 255 / 0.1);
+  border-radius: 0.5rem;
+  bottom: 2rem;
+  left: 0;
+  margin: auto;
+  position: fixed;
+  right: 0;
+  width: min-content;
+
+  legend {
+    color: #fff;
+  }
+
+  ul {
+    display: inline-flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    img {
+      transition: 0.5s all;
+      width: 4rem;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

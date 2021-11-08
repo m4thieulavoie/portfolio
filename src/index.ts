@@ -13,6 +13,7 @@ require("./Avatar/Avatar");
 require("./CoffeeButton/CoffeeButton");
 require("./Contact/Contact");
 require("./CV/CV");
+require("./Footer/Footer");
 require("./Header/Header");
 require("./History/History");
 require("./Home/Home");

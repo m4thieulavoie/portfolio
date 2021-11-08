@@ -3,10 +3,11 @@
 }
 
 :host,
-img {
+div {
   border-radius: var(--radius-large);
 }
 
-img {
-  object-fit: cover;
+div {
+  background-position: 52% 30%;
+  background-size: 250%;
 }
