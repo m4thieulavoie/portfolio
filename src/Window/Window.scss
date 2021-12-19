@@ -148,6 +148,7 @@
   position: absolute;
   top: 25px;
   width: 100%;
+  z-index: 1;
 
   @media screen and (max-width: 950px) {
     top: 0;
