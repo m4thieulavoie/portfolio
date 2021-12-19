@@ -9,7 +9,8 @@ const template = html`
     <mathieu-terminal></mathieu-terminal
   ></mathieu-window>
   <article></article>
-`; // <mathieu-footer></mathieu-footer>
+  <mathieu-footer></mathieu-footer>
+`;
 
 @customElement({
   name: "mathieu-app",

@@ -1,6 +1,9 @@
 import bootstrap from "axe-browser-reporter";
+import bootstrapDS from "@m4thieulavoie/design-system";
 import bg from "../images/bg.jpg";
 import styles from "./app.scss";
+
+bootstrapDS();
 
 const styling = document.createElement("style");
 styling.innerText = styles;

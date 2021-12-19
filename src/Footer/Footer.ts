@@ -1,15 +1,49 @@
-import { FASTElement, customElement, html } from "@microsoft/fast-element";
+import {
+  FASTElement,
+  customElement,
+  html,
+  repeat,
+  when,
+} from "@microsoft/fast-element";
 import contributions from "../common/contributions";
-import { navigateToPage } from "../common/utils";
 import styles from "./Footer.scss";
 
 const template = html<FooterComponent>`
-  <template role="footer">
-    <fieldset>
-      <legend>My code runs on</legend>
-      <ul tabindex="0"></ul>
-    </fieldset>
-  </template>
+  <fieldset>
+    <legend>Some of my code runs on</legend>
+    <ul tabindex="0">
+      ${repeat(
+        () => contributions,
+        html` <li>
+          ${when(
+            (x) => x.link,
+            html`<a
+              href="${(x) => x.link}"
+              target="_blank"
+              id="footer-link-${(x) => x.name}"
+            >
+              <img src="${(x) => x.icon}" alt="${(x) => x.name}"
+            /></a>`
+          )}
+          ${when(
+            (x) => !x.link,
+            html`<img
+              tabindex="0"
+              src="${(x) => x.icon}"
+              alt="${(x) => x.name}"
+              id="footer-link-${(x) => x.name}"
+            />`
+          )}
+        </li>`
+      )}
+    </ul>
+  </fieldset>
+  ${repeat(
+    () => contributions,
+    html`<matt-tooltip position="top" anchor="footer-link-${(x) => x.name}"
+      >${(x) => x.description}</matt-tooltip
+    >`
+  )}
 `;
 
 @customElement({
@@ -17,18 +51,4 @@ const template = html<FooterComponent>`
   template,
   styles,
 })
-export default class FooterComponent extends FASTElement {
-  connectedCallback() {
-    super.connectedCallback();
-
-    const list = this.shadowRoot.querySelector("ul");
-    contributions.forEach(({ icon, name }) => {
-      const listItem = document.createElement("li");
-      listItem.setAttribute("tabindex", "0");
-      const computedName = name === "home" ? "/" : name;
-      listItem.onclick = () => navigateToPage(computedName);
-      listItem.innerHTML = `<img class="emoji" src="${icon}" />`;
-      list.append(listItem);
-    });
-  }
-}
+export default class FooterComponent extends FASTElement {}

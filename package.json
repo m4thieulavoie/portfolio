@@ -41,9 +41,10 @@
     "webpack-dev-server": "4.6.0"
   },
   "dependencies": {
+    "@m4thieulavoie/design-system": "0.1.0",
     "@microsoft/fast-element": "1.6.2",
     "@vaadin/router": "1.7.4",
-    "axe-browser-reporter": "1.1.1"
+    "axe-browser-reporter": "1.1.2"
   },
   "browserslist": {
     "development": [

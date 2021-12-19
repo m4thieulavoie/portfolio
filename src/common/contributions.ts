@@ -6,29 +6,40 @@ import shopifyIcon from "../../images/shopify.png";
 
 interface Contribution {
   readonly name: string;
+  readonly description: string;
   readonly icon: string;
+  readonly link?: string;
 }
 
 const contributions: ReadonlyArray<Contribution> = [
   {
-    name: "home",
+    name: "VSCode",
     icon: vsCodeIcon,
+    link: "https://github.com/m4thieulavoie?org=microsoft",
+    description: "Contributed to FAST, used for the VSCode Design System.",
   },
   {
-    name: "mdn",
+    name: "MDN Web Docs",
     icon: mdnIcon,
+    link: "https://github.com/m4thieulavoie?org=mdn",
+    description: "Contributed some bug fixes",
   },
   {
-    name: "history",
+    name: "Brave Browser",
     icon: braveIcon,
+    link: "https://github.com/m4thieulavoie?org=brave",
+    description: "Helped with a few contributions",
   },
   {
-    name: "skillz",
+    name: "GoTo App",
     icon: gotoIcon,
+    description: "Built the design system for the app",
   },
   {
-    name: "publications",
+    name: "Shopify",
     icon: shopifyIcon,
+    link: "https://github.com/m4thieulavoie?org=shopify",
+    description: "Working in the admin, contributing to Polaris",
   },
 ];
 
