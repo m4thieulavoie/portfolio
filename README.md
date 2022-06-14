@@ -1,4 +1,4 @@
-# Mathie
+# Mathieu - 2021
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/55407d98-d92e-4bfd-881a-9f5ef1a9f503/deploy-status)](https://app.netlify.com/sites/gallant-goodall-8c025a/deploys)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
