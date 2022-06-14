@@ -21,7 +21,7 @@
   "scripts": {
     "start": "react-scripts start",
     "lint": "eslint src && npx stylelint \"src/**/*.scss\"",
-    "build": "npm run lint && react-scripts build",
+    "build": "npm run lint && react-scripts build && mv build dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
