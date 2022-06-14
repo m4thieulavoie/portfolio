@@ -5,8 +5,9 @@ import {
   repeat,
   when,
 } from "@microsoft/fast-element";
-import contributions from "../common/contributions";
 import styles from "./Footer.scss";
+
+const contributions: ReadonlyArray<unknown> = [];
 
 const template = html<FooterComponent>`
   <fieldset>

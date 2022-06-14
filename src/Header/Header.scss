@@ -1,14 +1,7 @@
 :host {
-  @media screen and (min-width: 741px) {
-    background-color: rgba(0 0 0 / 0.2);
-    color: #fff;
-    font-size: 14px;
-  }
-
-  height: 25px;
-  left: 0;
-  position: fixed;
-  top: 0;
+  display: inline-flex;
+  justify-content: space-between;
+  margin-top: 2rem;
   width: 100%;
 
   li {
@@ -36,7 +29,7 @@
     padding: 0;
 
     &:focus-visible {
-      outline: 1px solid var(--outline-color);
+      outline: 1px solid var(--matt-accent-color);
     }
 
     li {
@@ -49,7 +42,7 @@
       padding: 0 10px;
 
       &:focus-visible {
-        outline: 1px solid var(--outline-color);
+        outline: 1px solid var(--matt-accent-color);
       }
 
       @media screen and (max-width: 740px) {
@@ -116,7 +109,7 @@
     gap: 5px;
     height: 100%;
     padding: 0 5px;
-    position: absolute;
+    // position: absolute;
     right: 0;
     top: 0;
     user-select: none;

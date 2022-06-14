@@ -1,9 +1,12 @@
-export const fullName = "Mathieu Lavoie";
-export const roleName = "Senior Developer";
-export const address = "96, Rue de la Gare, Saint-Anaclet, Qc";
+export const firstName = "Matt";
+export const lastName = "Lavoie";
+export const fullName = `${firstName} ${lastName}`;
+export const roleName = "Senior Frontend Developer";
+export const address = "57, Rue de la Pinède, Rimouski, Qc";
 export const phoneNumer = "(418) 509-4850";
 export const email = "mathieulavoie94@gmail.com";
 export const website = "matmobile.co";
+export const currentCompany = "Shopify";
 export const careerOverview =
   "Passionate Web Developer since I was around 12, I've become a reference in CSS/SASS over the last couple of years. My eagerness to always learn more also made me a really solid Javascript/TypeScript developer, and helped me quickly learn and master React and  Web Components.";
 export type Skill =
@@ -33,7 +36,7 @@ export const jobHistory: readonly JobHistory[] = [
   {
     company: "Shopify",
     skills: ["CSS/SASS", "Git", "HTML", "JavaScript", "React", "TypeScript"],
-    title: "Senior Developer",
+    title: "Senior Frontend Developer",
     dates: "August 2021 - Today",
     tasks: ["Help develop the Shipping module of the Shopify platform"],
   },

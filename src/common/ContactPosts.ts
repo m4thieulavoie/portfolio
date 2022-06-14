@@ -50,4 +50,4 @@ export const contactPosts: ReadonlyArray<SocialPost> = [
       </ul>
     </div>`,
   },
-];
+] as any;
