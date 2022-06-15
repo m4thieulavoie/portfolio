@@ -3,11 +3,10 @@ import { Router } from "@vaadin/router";
 import styles from "./App.scss";
 
 const template = html`
-  <mathieu-header></mathieu-header
-  ><article></article>
+  <mathieu-header></mathieu-header>
+  <article></article>
+  <mathieu-footer></mathieu-footer>
 `;
-
-// <mathieu-footer></mathieu-footer>
 
 @customElement({
   name: "mathieu-app",

@@ -19,3 +19,27 @@ body {
     height: 100%;
   }
 }
+
+@media print {
+  body {
+    zoom: 65%;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(45deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(45deg);
+  }
+}

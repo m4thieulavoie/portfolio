@@ -13,12 +13,11 @@ require("./App/App");
 require("./Avatar/Avatar");
 require("./CoffeeButton/CoffeeButton");
 require("./Contact/Contact");
-require("./CV/CV");
 require("./Footer/Footer");
 require("./Header/Header");
 require("./Home/Home");
 require("./Portfolio/Portfolio");
-require("./Post/Post");
+require("./Resume/Resume");
 require("./Window/Window");
 
 bootstrap({

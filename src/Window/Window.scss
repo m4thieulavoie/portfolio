@@ -6,7 +6,7 @@
   margin: 2rem auto auto;
   position: relative;
   width: 100%;
-  
+
   header {
     align-items: center;
     background-color: var(--matt-accent-color);
@@ -25,6 +25,11 @@
     padding: 4rem;
     position: relative;
     z-index: 2;
+
+    @media print {
+      margin: 0;
+      padding: 4rem 2rem 0;
+    }
   }
 }
 
@@ -37,5 +42,17 @@
 
   content {
     padding: 0;
+  }
+}
+
+@media print {
+  :host {
+    border: 0;
+    box-shadow: none;
+    margin: 0;
+
+    header {
+      display: none;
+    }
   }
 }

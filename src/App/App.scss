@@ -1,5 +1,17 @@
 :host {
   display: block;
   margin: auto;
+  max-width: 1200px;
   width: 80%;
+}
+
+@media print {
+  :host {
+    width: 100%;
+  }
+
+  mathieu-header,
+  mathieu-footer {
+    display: none;
+  }
 }
