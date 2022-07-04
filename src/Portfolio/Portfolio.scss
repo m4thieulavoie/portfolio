@@ -38,6 +38,19 @@ ul {
       max-width: 4rem;
     }
 
+    .emoji {
+      display: inline-block;
+      font-size: 3rem;
+    }
+
+    a {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
     &:hover {
       p {
         align-items: center;
@@ -50,6 +63,7 @@ ul {
         left: 0;
         margin: 0;
         max-height: 100%;
+        overflow: auto;
         position: absolute;
         top: 0;
         width: 100%;

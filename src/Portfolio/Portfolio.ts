@@ -4,6 +4,7 @@ import {
   html,
   repeat,
   attr,
+  when,
 } from "@microsoft/fast-element";
 import { protfolioPosts } from "../common/PortfolioPosts";
 import type { SocialPost } from "../common/SocialPost";
@@ -31,9 +32,20 @@ import styles from "./Portfolio.scss";
       ${repeat(
         (x) => x.items || protfolioPosts,
         html<SocialPost>`<li>
-          <img alt="${(x) => x.name} image" src="${(x) => x.image}" />
+          ${when(
+            (x) => x.image,
+            html`<img alt="${(x) => x.name} image" src="${(x) => x.image}" />`
+          )}
+          ${when(
+            (x) => x.emoji && !x.image,
+            html`<span class="emoji">${(x) => x.emoji}</span>`
+          )}
           <h3>${(x) => x.name}</h3>
           <p>${(x) => x.text}</p>
+          ${when(
+            (x) => x.link,
+            html`<a target="_blank" href="${(x) => x.link}" />`
+          )}
         </li>`
       )}
     </ul></mathieu-window

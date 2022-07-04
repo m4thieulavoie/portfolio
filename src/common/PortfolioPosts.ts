@@ -43,58 +43,6 @@ export const protfolioPosts: readonly SocialPost[] = [
     type: "contribution",
   },
   {
-    type: "contribution",
-    name: "Open source contributions",
-    text: html`<ul class="contributions">
-      <li>
-        <a
-          href="https://github.com/microsoft/fast"
-          target="blank"
-          rel="noopener noreferrer"
-          >@microsoft/fast</a
-        >
-        - Made it to the top 20 contributors at some point
-      </li>
-      <li>
-        <a
-          href="https://github.com/brave/brave-core"
-          target="blank"
-          rel="noopener noreferrer"
-          >Brave</a
-        >
-        - Couple of UI tweaks
-      </li>
-      <li>
-        <a
-          href="https://github.com/mdn/translated-content"
-          target="blank"
-          rel="noopener noreferrer"
-          >mdn/translated-content</a
-        >
-        - French typo fix contributions
-      </li>
-      <li>
-        <a
-          href="https://github.com/dequelabs/react-axe"
-          target="blank"
-          rel="noopener noreferrer"
-          >react-axe</a
-        >
-        - Project build config
-      </li>
-      <li>
-        <a
-          href="https://github.com/m4thieulavoie/sass-to-string"
-          target="blank"
-          rel="noopener noreferrer"
-          >sass-to-string</a
-        >
-        - Repository owner
-      </li>
-      <li>... trying to add more 😅</li>
-    </ul>`,
-  },
-  {
     type: "project",
     name: "webcomponents-starter",
     image:
@@ -102,15 +50,8 @@ export const protfolioPosts: readonly SocialPost[] = [
     text: html`<p class="status">
       Git project template that include a ready-to-go project containing
       TypeScript/linting/SASS/Routing and more!
-      <a
-        href="https://github.com/m4thieulavoie/webcomponents-starter"
-        target="blank"
-        rel="noopener noreferrer"
-        aria-label="See webcomponents-starter in GitHub"
-      >
-        See it in GitHub!
-      </a>
     </p>`,
+    link: "https://github.com/m4thieulavoie/webcomponents-starter",
   },
   {
     type: "contribution",
@@ -119,15 +60,8 @@ export const protfolioPosts: readonly SocialPost[] = [
     text: html`<p class="status">
       Intrusive in-browser Axe reporter that lets you know as soon as you made
       an Accessibility error.
-      <a
-        href="https://github.com/m4thieulavoie/axe-browser-reporter"
-        target="blank"
-        rel="noopener noreferrer"
-        aria-label="See axe-browser-reporter in GitHub"
-      >
-        See it in GitHub!
-      </a>
     </p>`,
+    link: "https://github.com/m4thieulavoie/axe-browser-reporter",
   },
   {
     type: "project",
@@ -144,6 +78,7 @@ export const protfolioPosts: readonly SocialPost[] = [
     type: "publication",
     name: "How adding an agile coach to our team accelerated our work",
     text: html` <i>Posted in the internal engineering blog of GoTo</i>`,
+    emoji: "📝",
   },
   {
     type: "publication",
@@ -155,7 +90,7 @@ export const protfolioPosts: readonly SocialPost[] = [
     type: "publication",
     link: "https://dev.to/m4thieulavoie/taking-advantage-of-the-quarantine-as-a-developer-5elk",
     image:
-      "https://res.cloudinary.com/practicaldev/image/fetch/s--q2LY5Ha3--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/la66t9tv7yv6x0v2lkhe.jpg",
+      "https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png",
     text: html`
       The current world situation is (hopefully) something we'll experience once
       in our lives. In a sense, for us developers, it is a unique opportunity to
@@ -169,7 +104,7 @@ export const protfolioPosts: readonly SocialPost[] = [
     name: "How I managed to use SCSS inside Web Components",
     link: "https://dev.to/m4thieulavoie/how-i-managed-to-use-scss-inside-web-components-3lk9",
     image:
-      "https://res.cloudinary.com/practicaldev/image/fetch/s--DtdnbxBe--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/rgzgqyfr5anjo55ucp1z.jpg",
+      "https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png",
     text: html` A couple of years ago, I remember rushing to learn the fourth
     version of Angular to get up to speed with "moderns" web frameworks. About
     when I got okay-ish with it, we started writing more and more React at work,
