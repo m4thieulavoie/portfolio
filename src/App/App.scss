@@ -1,17 +1,29 @@
 :host {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  height: 100%;
+  display: block;
+  margin: auto;
+  max-width: 1200px;
+  width: 80%;
 
-  @media screen and (max-width: 1200px) {
-    grid-template-columns: 60% 40%;
+  @media screen and (max-width: 1300px) {
+    width: 90%;
   }
 
-  @media screen and (max-width: 740px) {
-    mathieu-window {
-      display: none;
-    }
+  @media screen and (max-width: 1000px) {
+    width: 95%;
+  }
 
-    grid-template-columns: 100%;
+  @media screen and (max-width: 850px) {
+    width: 100%;
+  }
+}
+
+@media print {
+  :host {
+    width: 100%;
+  }
+
+  mathieu-header,
+  mathieu-footer {
+    display: none;
   }
 }

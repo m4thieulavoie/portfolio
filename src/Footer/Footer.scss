@@ -1,42 +1,75 @@
 :host {
-  fieldset {
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255 255 255 / 0.1);
-    border-radius: 0.5rem;
-    bottom: 2rem;
-    left: 0;
-    margin: auto;
-    position: fixed;
-    right: 0;
-    width: min-content;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-    legend {
-      color: #fff;
+  ul {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+  }
+
+  section {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 90%;
+
+    @media screen and (max-width: 800px) {
+      display: none;
     }
 
     ul {
-      display: inline-flex;
-      gap: 1rem;
-      list-style: none;
-      margin: 0;
-      padding: 0;
+      margin-left: -6rem;
 
-      a {
-        display: inline-block;
-      }
+      li {
+        background-color: #eee;
+        border: 1px solid #222;
+        border-radius: 20px;
+        font-size: 0.75rem;
+        padding: 0.5rem 1rem;
+        position: relative;
+        z-index: 1;
 
-      img {
-        transition: 0.5s all;
-        width: 4rem;
-      }
+        /* stylelint-disable-next-line max-nesting-depth */
+        &:last-child {
+          font-size: 1rem;
+          padding-right: 1.25rem;
 
-      img:hover {
-        transform: scale(1.1);
+          /* stylelint-disable-next-line max-nesting-depth */
+          &::after {
+            background-color: rgb(0 144 38);
+            border-radius: 50%;
+            content: "";
+            height: 0.5rem;
+            position: absolute;
+            right: 0.35rem;
+            top: 0.95rem;
+            width: 0.5rem;
+          }
+        }
       }
     }
-  }
 
-  @media screen and (max-width: 740px) {
-    display: none;
+    &::before {
+      content: "Versions timeline";
+      left: 0;
+      position: absolute;
+      top: 1rem;
+    }
+
+    &::after {
+      background-color: #222;
+      content: "";
+      height: 1px;
+      left: 0;
+      position: absolute;
+      top: 2.25rem;
+      width: 100%;
+    }
   }
 }

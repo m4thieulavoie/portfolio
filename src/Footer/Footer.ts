@@ -1,49 +1,46 @@
-import {
-  FASTElement,
-  customElement,
-  html,
-  repeat,
-  when,
-} from "@microsoft/fast-element";
-import contributions from "../common/contributions";
+import { FASTElement, customElement, html } from "@microsoft/fast-element";
 import styles from "./Footer.scss";
 
 const template = html<FooterComponent>`
-  <fieldset>
-    <legend>Some of my code runs on</legend>
-    <ul tabindex="0">
-      ${repeat(
-        () => contributions,
-        html` <li>
-          ${when(
-            (x) => x.link,
-            html`<a
-              href="${(x) => x.link}"
-              target="_blank"
-              id="footer-link-${(x) => x.name}"
-            >
-              <img src="${(x) => x.icon}" alt="${(x) => x.name}"
-            /></a>`
-          )}
-          ${when(
-            (x) => !x.link,
-            html`<img
-              tabindex="0"
-              src="${(x) => x.icon}"
-              alt="${(x) => x.name}"
-              id="footer-link-${(x) => x.name}"
-            />`
-          )}
-        </li>`
-      )}
+  <section>
+    <ul>
+      <li>
+        <matt-anchor
+          href="https://2021--gallant-goodall-8c025a.netlify.app/"
+          target="_blank"
+          >2021</matt-anchor
+        >
+      </li>
+      <li>
+        <matt-anchor href="https://m4thieulavoie.dev">Now</matt-anchor>
+      </li>
     </ul>
-  </fieldset>
-  ${repeat(
-    () => contributions,
-    html`<matt-tooltip position="top" anchor="footer-link-${(x) => x.name}"
-      >${(x) => x.description}</matt-tooltip
-    >`
-  )}
+  </section>
+  <ul>
+    <li>
+      <matt-anchor href="https://codepen.io/matmobile" target="_blank"
+        >Codepen</matt-anchor
+      >
+    </li>
+    <li>
+      <matt-anchor href="https://github.com/m4thieulavoie" target="_blank"
+        >GitHub</matt-anchor
+      >
+    </li>
+    <li>
+      <matt-anchor
+        href="https://www.linkedin.com/in/mathieu-lavoie-4a2a99122/"
+        target="_blank"
+      >
+        Linkedin
+      </matt-anchor>
+    </li>
+    <li>
+      <matt-anchor href="https://twitter.com/matmobile_js" target="_blank"
+        >Twitter</matt-anchor
+      >
+    </li>
+  </ul>
 `;
 
 @customElement({

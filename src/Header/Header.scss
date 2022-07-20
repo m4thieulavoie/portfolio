@@ -1,30 +1,22 @@
-:host {
-  @media screen and (min-width: 741px) {
-    background-color: rgba(0 0 0 / 0.2);
-    color: #fff;
-    font-size: 14px;
-  }
+@import "../sass/animations";
 
-  height: 25px;
-  left: 0;
-  position: fixed;
-  top: 0;
+:host {
+  align-items: center;
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: space-between;
+  margin-top: 2rem;
   width: 100%;
 
-  li {
-    @media screen and (max-width: 740px) {
-      display: flex;
-      flex-direction: column;
-      transition: 300ms all;
-    }
+  .last-name,
+  .first-name {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
 
-    .emoji {
-      font-size: 28px;
-
-      @media screen and (min-width: 741px) {
-        display: none;
-      }
-    }
+  .last-name {
+    color: var(--matt-accent-color);
+    font-weight: 600;
   }
 
   ul {
@@ -36,7 +28,7 @@
     padding: 0;
 
     &:focus-visible {
-      outline: 1px solid var(--outline-color);
+      outline: 1px solid var(--matt-accent-color);
     }
 
     li {
@@ -49,7 +41,7 @@
       padding: 0 10px;
 
       &:focus-visible {
-        outline: 1px solid var(--outline-color);
+        outline: 1px solid var(--matt-accent-color);
       }
 
       @media screen and (max-width: 740px) {
@@ -71,93 +63,19 @@
     }
   }
 
-  @media screen and (max-width: 740px) {
-    background-color: transparent;
-    bottom: 0;
-    height: auto;
-    top: auto;
-
-    ul {
-      align-items: center;
-      backdrop-filter: blur(10px);
-      background-color: rgba(255 255 255 / 0.5);
-      border: 1px solid #d3d3d3;
-      border-radius: var(--radius-medium);
-      display: flex;
-      height: auto;
-      justify-content: flex-start;
-      margin: 0 5px 10px;
-      overflow-x: auto;
-      padding: 10px 20px;
-
-      li {
-        border-radius: var(--radius-medium);
-        font-size: 12px;
-        margin: 0 4px;
-        min-width: 60px;
-        padding: 10px;
-        text-align: center;
-      }
-
-      .emoji {
-        margin-bottom: 5px;
-      }
-    }
-
-    .main-avatar {
-      display: none !important;
-    }
-  }
-
   .main-avatar {
     align-items: center;
     cursor: pointer;
     display: flex;
-    gap: 5px;
-    height: 100%;
-    padding: 0 5px;
-    position: absolute;
-    right: 0;
-    top: 0;
+    gap: 0.25rem;
     user-select: none;
 
-    .avatar-container {
-      align-items: center;
-      display: flex;
-    }
-
-    .mathieu-avatar {
-      margin-right: 5px;
-    }
-
-    &:hover {
-      background-color: rgba(240 240 240 / 0.2);
-    }
-
-    &:active {
-      background-color: rgba(240 240 240 / 0.4);
+    &:hover mathieu-avatar {
+      animation: shake 2s ease-in-out infinite;
     }
   }
 
-  .role,
-  .name {
-    align-items: center;
-    display: flex;
-  }
-
-  li span {
-    margin-left: 3px;
-  }
-
-  @media screen and (max-width: 940px) {
-    .role {
-      display: none;
-    }
-  }
-
-  @media screen and (max-width: 580px) {
-    .name {
-      display: none;
-    }
+  @media screen and (max-width: 850px) {
+    padding: 0 1rem;
   }
 }
