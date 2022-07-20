@@ -138,6 +138,11 @@ const projects: ReadonlyArray<Contribution> = [
         </ul>
       </section>
     </content>
+    <footer>
+      <matt-button size="large" @click=${() => window.print()}
+        >Print</matt-button
+      >
+    </footer>
   </mathieu-window>`,
   styles,
 })

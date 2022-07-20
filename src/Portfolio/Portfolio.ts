@@ -15,16 +15,27 @@ import styles from "./Portfolio.scss";
   template: html<PortfolioComponent>`<mathieu-window>
     <h2 slot="title">Portfolio</h2>
     <div>
-      <matt-button variant="secondary" @click=${(x) => x.filter()}
+      <matt-button
+        variant="${(x) => (!x.selectedFilter ? "primary" : "secondary")}"
+        @click=${(x) => x.filter()}
         >All</matt-button
       >
-      <matt-button variant="secondary" @click=${(x) => x.filter("publication")}
+      <matt-button
+        variant="${(x) =>
+          x.selectedFilter === "publication" ? "primary" : "secondary"}"
+        @click=${(x) => x.filter("publication")}
         >Publications</matt-button
       >
-      <matt-button variant="secondary" @click=${(x) => x.filter("contribution")}
+      <matt-button
+        variant="${(x) =>
+          x.selectedFilter === "contribution" ? "primary" : "secondary"}"
+        @click=${(x) => x.filter("contribution")}
         >Contributions</matt-button
       >
-      <matt-button variant="secondary" @click=${(x) => x.filter("project")}
+      <matt-button
+        variant="${(x) =>
+          x.selectedFilter === "project" ? "primary" : "secondary"}"
+        @click=${(x) => x.filter("project")}
         >Projects</matt-button
       >
     </div>
@@ -54,8 +65,10 @@ import styles from "./Portfolio.scss";
 })
 export default class PortfolioComponent extends FASTElement {
   @attr items: SocialPost[] | undefined;
+  @attr selectedFilter: string | undefined;
 
   public filter(postType?: SocialPost["type"]) {
+    this.selectedFilter = postType;
     this.items = postType
       ? protfolioPosts.filter(({ type }) => type === postType)
       : undefined;

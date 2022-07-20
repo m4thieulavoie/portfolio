@@ -22,14 +22,32 @@
     }
   }
 
+  mathieu-window > footer {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto auto;
+
+    @media print {
+      display: none;
+    }
+  }
+
   content {
     display: flex;
+
+    @media screen and (max-width: 750px) {
+      flex-direction: column;
+    }
 
     section:first-child {
       width: 40%;
 
       @media (max-width: 1200px) {
         width: 50%;
+      }
+
+      @media screen and (max-width: 750px) {
+        width: 100%;
       }
 
       @media print {
@@ -54,6 +72,10 @@
 
       @media (max-width: 1200px) {
         width: 50%;
+      }
+
+      @media screen and (max-width: 750px) {
+        width: 100%;
       }
 
       @media print {
@@ -83,6 +105,7 @@
         meter {
           width: 100%;
 
+          /* stylelint-disable-next-line max-nesting-depth */
           &::-webkit-meter-optimum-value {
             background-color: #888;
           }

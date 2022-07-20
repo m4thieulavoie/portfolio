@@ -3,6 +3,18 @@
   margin: auto;
   max-width: 1200px;
   width: 80%;
+
+  @media screen and (max-width: 1300px) {
+    width: 90%;
+  }
+
+  @media screen and (max-width: 1000px) {
+    width: 95%;
+  }
+
+  @media screen and (max-width: 850px) {
+    width: 100%;
+  }
 }
 
 @media print {

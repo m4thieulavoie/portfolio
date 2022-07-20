@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: var(--neutral-1);
+  background-color: rgba(0 0 0 / 0.05);
   font-family: var(--font-default);
   height: 100vh;
   margin: 0;
@@ -22,6 +22,7 @@ body {
 
 @media print {
   body {
+    background-color: #fff;
     zoom: 65%;
   }
 }

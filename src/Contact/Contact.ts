@@ -1,6 +1,5 @@
 import { FASTElement, customElement, html } from "@microsoft/fast-element";
 import { email } from "../common/metadata";
-import styles from "./Contact.scss";
 
 @customElement({
   name: "mathieu-contact",
@@ -10,9 +9,9 @@ import styles from "./Contact.scss";
     <p>
       I still have to get around to make a proper contact page. In the
       meanwhile, feel free to stop by my
-      <a href="https://github.com/m4thieulavoie" target="_blank"
-        >GitHub profile</a
-      >, or <a href="mailto:${email}">shoot me an email</a>!
+      <matt-anchor href="https://github.com/m4thieulavoie" target="_blank"
+        >GitHub profile</matt-anchor
+      >, or <matt-anchor href="mailto:${email}">shoot me an email</matt-anchor>!
     </p>
     <h2>Sponsor me</h2>
     <p
@@ -33,6 +32,5 @@ import styles from "./Contact.scss";
       ></iframe>
     </p>
   </mathieu-window>`,
-  styles,
 })
 export default class ContactComponent extends FASTElement {}

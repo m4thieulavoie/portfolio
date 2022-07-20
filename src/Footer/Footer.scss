@@ -1,6 +1,7 @@
 :host {
+  align-items: center;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
 
   ul {
@@ -10,5 +11,65 @@
     gap: 1rem;
     list-style: none;
     padding: 0;
+  }
+
+  section {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 90%;
+
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+
+    ul {
+      margin-left: -6rem;
+
+      li {
+        background-color: #eee;
+        border: 1px solid #222;
+        border-radius: 20px;
+        font-size: 0.75rem;
+        padding: 0.5rem 1rem;
+        position: relative;
+        z-index: 1;
+
+        /* stylelint-disable-next-line max-nesting-depth */
+        &:last-child {
+          font-size: 1rem;
+          padding-right: 1.25rem;
+
+          /* stylelint-disable-next-line max-nesting-depth */
+          &::after {
+            background-color: rgb(0 144 38);
+            border-radius: 50%;
+            content: "";
+            height: 0.5rem;
+            position: absolute;
+            right: 0.35rem;
+            top: 0.95rem;
+            width: 0.5rem;
+          }
+        }
+      }
+    }
+
+    &::before {
+      content: "Versions timeline";
+      left: 0;
+      position: absolute;
+      top: 1rem;
+    }
+
+    &::after {
+      background-color: #222;
+      content: "";
+      height: 1px;
+      left: 0;
+      position: absolute;
+      top: 2.25rem;
+      width: 100%;
+    }
   }
 }

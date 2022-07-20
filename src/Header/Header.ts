@@ -29,7 +29,6 @@ const template = html<HeaderComponent>`
         }}
       >
         ${({ name }) => firstLetterUppercase(name)}
-        <span class="emoji">${({ emoji }) => emoji}</span>
       </li>`
     )}
   </ul>

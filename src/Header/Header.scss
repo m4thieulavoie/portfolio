@@ -1,6 +1,8 @@
 @import "../sass/animations";
 
 :host {
+  align-items: center;
+  box-sizing: border-box;
   display: inline-flex;
   justify-content: space-between;
   margin-top: 2rem;
@@ -15,22 +17,6 @@
   .last-name {
     color: var(--matt-accent-color);
     font-weight: 600;
-  }
-
-  li {
-    @media screen and (max-width: 740px) {
-      display: flex;
-      flex-direction: column;
-      transition: 300ms all;
-    }
-
-    .emoji {
-      font-size: 28px;
-
-      @media screen and (min-width: 741px) {
-        display: none;
-      }
-    }
   }
 
   ul {
@@ -87,5 +73,9 @@
     &:hover mathieu-avatar {
       animation: shake 2s ease-in-out infinite;
     }
+  }
+
+  @media screen and (max-width: 850px) {
+    padding: 0 1rem;
   }
 }

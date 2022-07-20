@@ -25,5 +25,9 @@
       font-weight: 600;
       margin-bottom: -3rem;
     }
+
+    @media screen and (max-width: 1180px) {
+      flex-direction: column;
+    }
   }
 }

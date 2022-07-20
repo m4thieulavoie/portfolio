@@ -84,6 +84,7 @@ export const protfolioPosts: readonly SocialPost[] = [
     type: "publication",
     name: "Get started with [design system name] design tokens",
     text: html` <i>Posted in the internal engineering blog of GoTo</i>`,
+    emoji: "📝",
   },
   {
     name: "Taking advantage of the quarantine as a developer",
