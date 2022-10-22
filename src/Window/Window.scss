@@ -1,3 +1,8 @@
+/* stylelint-disable max-nesting-depth */
+/* stylelint-disable function-no-unknown */
+
+$emoji-size: 60px;
+
 :host {
   background-color: #fff;
   border: 1px solid rgba(#222, 0.1);
@@ -19,8 +24,51 @@
     display: flex;
     height: var(--window-header-height, 6rem);
     justify-content: center;
+    overflow: hidden;
+    position: relative;
     width: 100%;
     z-index: 1;
+
+    .emoji-wrapper {
+      animation: x 9s linear infinite alternate;
+      display: inline-flex;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: calc(100% - $emoji-size);
+
+      &:nth-child(2) {
+        animation-delay: calc(random(8) * -1) + s;
+
+        .emoji {
+          animation-delay: calc(random(3) * -1) + s;
+        }
+      }
+
+      &:nth-child(3) {
+        animation-delay: calc(random(8) * -1) + s;
+
+        .emoji {
+          animation-delay: calc(random(3) * -1) + s;
+        }
+      }
+
+      &:nth-child(4) {
+        animation-delay: calc(random(8) * -1) + s;
+
+        .emoji {
+          animation-delay: calc(random(3) * -1) + s;
+        }
+      }
+    }
+
+    .emoji {
+      animation: y 4s linear infinite alternate;
+      font-size: $emoji-size;
+      line-height: $emoji-size;
+      opacity: 0.85;
+      position: absolute;
+    }
   }
 
   content {
@@ -41,7 +89,7 @@
   margin: 0;
 }
 
-:host([home]) {
+:host([home="true"]) {
   --window-header-height: 15rem;
 
   content {
@@ -58,5 +106,23 @@
     header {
       display: none;
     }
+  }
+}
+
+@keyframes x {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes y {
+  100% {
+    transform: translateY(
+      calc(var(--window-header-height, 6rem) - $emoji-size)
+    );
   }
 }

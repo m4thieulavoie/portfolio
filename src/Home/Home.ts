@@ -13,7 +13,7 @@ import {
 } from "../common/metadata";
 import styles from "./Home.scss";
 
-const template = html<HomeComponent>`<mathieu-window home>
+const template = html<HomeComponent>`<mathieu-window home="true">
   <section>
     <mathieu-avatar></mathieu-avatar>
     <h2>${fullName}, ${roleName} at ${currentCompany}</h2>
