@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "@m4thieulavoie/design-system": "0.1.2",
-    "@microsoft/fast-element": "1.10.5",
+    "@microsoft/fast-element": "1.11.0",
     "@vaadin/router": "1.7.4",
     "axe-browser-reporter": "1.1.3"
   },
