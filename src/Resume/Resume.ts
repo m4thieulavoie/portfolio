@@ -56,7 +56,7 @@ const projects: ReadonlyArray<Contribution> = [
         Utility resolving sass modules into JavaScript strings.
       </p>
       <ul>
-        <li>11k+ downloads per month</li>
+        <li>145k+ downloads</li>
         <li>80+ projects using it</li>
       </ul>`,
   },
