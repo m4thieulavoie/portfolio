@@ -29,7 +29,7 @@
     "html-webpack-plugin": "5.5.3",
     "lodash-es": "4.17.21",
     "prettier": "3.1.0",
-    "rimraf": "3.0.2",
+    "rimraf": "5.0.5",
     "sass": "1.69.5",
     "sass-loader": "13.3.2",
     "sass-to-string": "1.6.3",
