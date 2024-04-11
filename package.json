@@ -30,7 +30,7 @@
     "lodash-es": "4.17.21",
     "prettier": "3.2.5",
     "rimraf": "3.0.2",
-    "sass": "1.74.1",
+    "sass": "1.75.0",
     "sass-loader": "13.3.3",
     "sass-to-string": "1.6.3",
     "ts-loader": "9.5.1",
