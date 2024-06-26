@@ -32,7 +32,7 @@
     "rimraf": "5.0.7",
     "sass": "1.77.6",
     "sass-loader": "14.2.1",
-    "sass-to-string": "1.6.3",
+    "sass-to-string": "1.6.4",
     "ts-loader": "9.5.1",
     "typescript": "5.5.2",
     "util.promisify": "1.1.2",
