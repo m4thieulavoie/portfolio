@@ -35,18 +35,18 @@
   content {
     display: flex;
 
-    @media screen and (max-width: 750px) {
+    @media screen and (width <= 750px) {
       flex-direction: column;
     }
 
     section:first-child {
       width: 40%;
 
-      @media (max-width: 1200px) {
+      @media (width <= 1200px) {
         width: 50%;
       }
 
-      @media screen and (max-width: 750px) {
+      @media screen and (width <= 750px) {
         width: 100%;
       }
 
@@ -70,11 +70,11 @@
     section:nth-child(2) {
       position: relative;
 
-      @media (max-width: 1200px) {
+      @media (width <= 1200px) {
         width: 50%;
       }
 
-      @media screen and (max-width: 750px) {
+      @media screen and (width <= 750px) {
         width: 100%;
       }
 
