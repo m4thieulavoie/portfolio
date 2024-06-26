@@ -31,14 +31,14 @@
     "prettier": "3.3.2",
     "rimraf": "5.0.7",
     "sass": "1.77.6",
-    "sass-loader": "13.3.3",
+    "sass-loader": "14.2.1",
     "sass-to-string": "1.6.3",
     "ts-loader": "9.5.1",
     "typescript": "5.5.2",
     "util.promisify": "1.1.2",
     "webpack": "5.92.1",
     "webpack-cli": "5.1.4",
-    "webpack-dev-server": "4.15.2"
+    "webpack-dev-server": "5.0.4"
   },
   "dependencies": {
     "@m4thieulavoie/design-system": "0.1.2",
