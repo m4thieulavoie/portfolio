@@ -1,7 +1,7 @@
 export const firstName = "Matt";
 export const lastName = "Lavoie";
 export const fullName = `${firstName} ${lastName}`;
-export const roleName = "Senior Frontend Developer";
+export const roleName = "Staff Frontend Developer";
 export const address = "57, Rue de la Pinède, Rimouski, Qc";
 export const phoneNumber = "(418) 509-4850";
 export const email = "mathieulavoie94@gmail.com";
@@ -101,7 +101,7 @@ export const jobHistory: readonly JobHistory[] = [
       "React",
       "TypeScript",
     ],
-    title: "Senior Software Engineer",
+    title: "Senior Software Developer",
     dates: "November 2018 - April 2020",
     tasks: [
       "Angular4+ development alongside React, HTML, CSS and SASS",

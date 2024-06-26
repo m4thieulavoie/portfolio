@@ -5,13 +5,13 @@ import {
   attr,
 } from "@microsoft/fast-element";
 import me from "../../images/memoji.png";
-import { fullName } from "../common/metadata";
+import { fullName, roleName } from "../common/metadata";
 import styles from "./Avatar.scss";
 
 const template = html<AvatarComponent>`<div
   style="width: ${(x) => x.size}rem;height: ${(x) =>
     x.size}rem; background-image: url(${(x) => x.url});background-size: contain;"
-  alt="${fullName} - Senior Frontend @ Shopify"
+  alt="${fullName} - ${roleName} @ Shopify"
 />`;
 
 @customElement({

@@ -68,7 +68,7 @@ const template = html<HomeComponent>`<mathieu-window home="true">
         </p>
         <p>
           More recently, I joined the amazing team at Shopify. I'll be working
-          with the Shipping team as a Senior Developer and doing mostly React,
+          with the Shipping team as a Staff Frontend Developer and doing mostly React,
           HTML, CSS and TypeScript.
         </p>`
     )}
