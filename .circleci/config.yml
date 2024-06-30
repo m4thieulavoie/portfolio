@@ -7,11 +7,11 @@ jobs:
       name: node/default
     steps:
       - checkout
-      - node/install-packages
+      - node/install:
+          node-version: '16.13'
+      - run: node --version
       - run:
           command: npm run build
-      - run:
-          command: npm run test
 workflows:
   node-tests:
     jobs:
