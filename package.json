@@ -38,7 +38,7 @@
     "util.promisify": "1.1.2",
     "webpack": "5.97.1",
     "webpack-cli": "5.1.4",
-    "webpack-dev-server": "5.1.0"
+    "webpack-dev-server": "5.2.0"
   },
   "dependencies": {
     "@m4thieulavoie/design-system": "0.1.2",
