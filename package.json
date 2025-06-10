@@ -31,7 +31,7 @@
     "prettier": "3.5.3",
     "rimraf": "5.0.10",
     "sass": "1.89.2",
-    "sass-loader": "14.2.1",
+    "sass-loader": "16.0.5",
     "sass-to-string": "1.6.4",
     "ts-loader": "9.5.2",
     "typescript": "5.8.3",
