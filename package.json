@@ -43,7 +43,7 @@
   "dependencies": {
     "@m4thieulavoie/design-system": "0.1.2",
     "@microsoft/fast-element": "1.13.0",
-    "@vaadin/router": "1.7.5",
+    "@vaadin/router": "2.0.0",
     "axe-browser-reporter": "1.1.4"
   },
   "browserslist": {
