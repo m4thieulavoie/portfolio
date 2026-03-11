@@ -2,21 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="images/favicon.ico" />
+    <link rel="icon" href="/images/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#1a1a1a" />
     <meta name="description" content="Mathieu Lavoie's online portfolio" />
     <title>Mathieu Lavoie - Staff Frontend Developer @ Shopify</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <main>
-      <h1 style="z-index: -1; opacity: 0; height: 0; margin: 0">
-        This is my website
-      </h1>
-      <matt-theme-provider>
-        <mathieu-app></mathieu-app>
-      </matt-theme-provider>
-    </main>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
